@@ -1,163 +1,171 @@
-
 {% extends 'base.html' %}
 {% block content %}
-    {% load static %}
-
-    <!-- Pre Loader -->
-    <div id="aa-preloader-area">
-        <div class="pulse"></div>
+    {% load staticfiles %}
+  <!-- Start header section -->
+  <header id="aa-header">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="aa-header-area">
+            <div class="row">
+              <div class="col-md-6 col-sm-6 col-xs-6">
+                <div class="aa-header-left">
+                  <div class="aa-telephone-no">
+                    <span class="fa fa-phone"></span>
+                    1-900-523-3564
+                  </div>
+                  <div class="aa-email hidden-xs">
+                    <span class="fa fa-envelope-o"></span> info@rc.com
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 col-sm-6 col-xs-6">
+                <div class="aa-header-right">
+                  <a href="register.html" class="aa-register">Register</a>
+                  <a href="signin.html" class="aa-login">Login</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-    <!-- SCROLL TOP BUTTON -->
-    <a class="scrollToTop" href="#"><i class="fa fa-angle-double-up"></i></a>
-    <!-- END SCROLL TOP BUTTON -->
-
-
+  </header>
+  <!-- End header section -->
     <!-- Start menu section -->
-    <section id="aa-menu-area">
-        <nav class="navbar navbar-default main-navbar" role="navigation">
-            <div class="container">
-                <div class="navbar-header">
-                    <!-- FOR MOBILE VIEW COLLAPSED BUTTON -->
-                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+  <section id="aa-menu-area">
+    <nav class="navbar navbar-default main-navbar" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <!-- FOR MOBILE VIEW COLLAPSED BUTTON -->
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
             <span class="sr-only">Toggle navigation</span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-                    <!-- LOGO -->
-                    <!-- Text based logo -->
-                    <a class="navbar-brand aa-logo" href="index.html"> Home <span>Property</span></a>
-                    <!-- Image based logo -->
-                    <!-- <a class="navbar-brand aa-logo-img" href="index.html"><img src="img/logo.png" alt="logo"></a> -->
-                </div>
-                <div id="navbar" class="navbar-collapse collapse">
-                    <ul id="top-menu" class="nav navbar-nav navbar-right aa-main-nav">
-                        <li><a href="index.html">Browse Home</a></li>
-
-                        <li><a href="gallery.html">List Your Home</a></li>
-
-                        <li><a href="contact.html">FAQ</a></li>
-
-                        <li><a href="contact.html">Login</a></li>
-
-                        <li class="active"><a href="contact.html">Register</a></li>
-
-                    </ul>
-                </div>
-                <!--/.nav-collapse -->
-            </div>
-        </nav>
-    </section>
-    <!-- End menu section -->
-
-    <!-- Start slider  -->
-    <section id="aa-slider">
-        <div class="aa-slider-area">
-            <!-- Top slider -->
-            <div class="aa-top-slider">
-                <!-- Top slider single slide -->
-                <div class="aa-top-slider-single">
-                    <img src="{% static "main/img/slider/banner.jpg" %}" alt="img">
-                    <!-- Top slider content -->
-                    <div class="aa-top-slider-content">
-
-                        <h2 class="aa-top-slider-title">
-                            For our clients who want to us to list their properties for shorter timelines</h2>
-                        <p class="aa-top-slider-location"><i class="fa fa-map-marker"></i>Right At the Heart of Ghana</p>
-
-
-                    </div>
-                    <!-- / Top slider content -->
-                </div>
-                <!-- / Top slider single slide -->
-            </div>
+          <!-- LOGO -->
+          <!-- Text based logo -->
+           <!-- <a class="navbar-brand aa-logo" href="index.html"> Home <span>Property</span></a>-->
+           <!-- Image based logo -->
+           <a class="navbar-brand aa-logo-img" href="{% url "index" %}"><img src="{% static "main/img/logo.png" %}" alt="logo"></a>
         </div>
-    </section>
-    <!-- End slider  -->
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul id="top-menu" class="nav navbar-nav navbar-right aa-main-nav">
+            <li class="active"><a href="{% url 'list' %}">Browser Homes</a></li>
+            <li><a href="gallery.html">List your home</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
+           <li><a href="404.html">FAQ</a></li>
+              <li><a href="contact.html">Login</a></li>
+           <li><a href="404.html">Register</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
+  </section>
+<!-- End menu section -->
 
-    <!-- Advance Search -->
-    <section id="aa-advance-search">
-        <div class="container">
-            <div class="aa-advance-search-area">
-                <div class="form">
-                    <div class="aa-advance-search-top">
-                        <div class="row">
-                            <div class="col-md-4">
-                                <div class="aa-single-advance-search">
-                                    <input type="text" placeholder="Type Your Location">
-                                </div>
-                            </div>
-                            <div class="col-md-2">
-                                <div class="aa-single-advance-search">
-                                    <select>
+  <!-- Start Proerty header  -->
+  <section id="aa-property-header">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="aa-property-header-inner">
+            <h2>Home Propety</h2>
+              <p class="aa-top-slider-location"><i class="fa fa-map-marker"></i>Right At the Heart of Ghana</p>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End Proerty header  -->
+
+  <!-- Advance Search -->
+  <section id="aa-advance-search">
+    <div class="container">
+      <div class="aa-advance-search-area">
+        <div class="form">
+         <div class="aa-advance-search-top">
+            <div class="row">
+              <div class="col-md-4">
+                <div class="aa-single-advance-search">
+                  <input type="text" placeholder="Type Your Location">
+                </div>
+              </div>
+              <div class="col-md-2">
+                <div class="aa-single-advance-search">
+                  <select>
                    <option value="0" selected>Category</option>
                     <option value="1">Flat</option>
                     <option value="2">Land</option>
                     <option value="3">Plot</option>
                     <option value="4">Commercial</option>
                   </select>
-                                </div>
-                            </div>
-                            <div class="col-md-2">
-                                <div class="aa-single-advance-search">
-                                    <select>
-                    <option value="0" selected>Type</option>
-                    <option value="1">Flat</option>
-                    <option value="2">Land</option>
-                    <option value="3">Plot</option>
-                    <option value="4">Commercial</option>
-                  </select>
-                                </div>
-                            </div>
-                            <div class="col-md-2">
-                                <div class="aa-single-advance-search">
-                                    <select>
-                    <option value="0" selected>Type</option>
-                    <option value="1">Flat</option>
-                    <option value="2">Land</option>
-                    <option value="3">Plot</option>
-                    <option value="4">Commercial</option>
-                  </select>
-                                </div>
-                            </div>
-                            <div class="col-md-2">
-                                <div class="aa-single-advance-search">
-                                    <input class="aa-search-btn" type="submit" value="Search">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="aa-advance-search-bottom">
-                        <div class="row">
-                            <div class="col-md-6">
-                                <div class="aa-single-filter-search">
-                                    <span>AREA (SQ)</span>
-                                    <span>FROM</span>
-                                    <span id="skip-value-lower" class="example-val">30.00</span>
-                                    <span>TO</span>
-                                    <span id="skip-value-upper" class="example-val">100.00</span>
-                                    <div id="aa-sqrfeet-range" class="noUi-target noUi-ltr noUi-horizontal noUi-background">
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="aa-single-filter-search">
-                                    <span>PRICE ($)</span>
-                                    <span>FROM</span>
-                                    <span id="skip-value-lower2" class="example-val">30.00</span>
-                                    <span>TO</span>
-                                    <span id="skip-value-upper2" class="example-val">100.00</span>
-                                    <div id="aa-price-range" class="noUi-target noUi-ltr noUi-horizontal noUi-background">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
                 </div>
+              </div>
+              <div class="col-md-2">
+                 <div class="aa-single-advance-search">
+                  <select>
+                    <option value="0" selected>Type</option>
+                    <option value="1">Flat</option>
+                    <option value="2">Land</option>
+                    <option value="3">Plot</option>
+                    <option value="4">Commercial</option>
+                  </select>
+              </div>
+              </div>
+              <div class="col-md-2">
+                 <div class="aa-single-advance-search">
+                  <select>
+                    <option value="0" selected>Type</option>
+                    <option value="1">Flat</option>
+                    <option value="2">Land</option>
+                    <option value="3">Plot</option>
+                    <option value="4">Commercial</option>
+                  </select>
+              </div>
+              </div>
+              <div class="col-md-2">
+                <div class="aa-single-advance-search">
+                  <input class="aa-search-btn" type="submit" value="Search">
+                </div>
+              </div>
             </div>
+          </div>
+         <div class="aa-advance-search-bottom">
+           <div class="row">
+            <div class="col-md-6">
+              <div class="aa-single-filter-search">
+                <span>AREA (SQ)</span>
+                <span>FROM</span>
+                <span id="skip-value-lower" class="example-val">30.00</span>
+                <span>TO</span>
+                <span id="skip-value-upper" class="example-val">100.00</span>
+                <div id="aa-sqrfeet-range" class="noUi-target noUi-ltr noUi-horizontal noUi-background">
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="aa-single-filter-search">
+                <span>PRICE ($)</span>
+                <span>FROM</span>
+                <span id="skip-value-lower2" class="example-val">30.00</span>
+                <span>TO</span>
+                <span id="skip-value-upper2" class="example-val">100.00</span>
+                <div id="aa-price-range" class="noUi-target noUi-ltr noUi-horizontal noUi-background">
+                </div>
+              </div>
+            </div>
+          </div>
+         </div>
         </div>
-    </section>
-    <!-- / Advance Search -->
+      </div>
+    </div>
+  </section>
+  <!-- / Advance Search -->
+
+
 
 
     <!-- Latest property -->
@@ -174,7 +182,7 @@
                         <div class="col-md-4">
                             <article class="aa-properties-item">
                                 <a href="#" class="aa-properties-item-img">
-                                    <img src="{% static "main/img/item/1.jpg" %}" alt="img">
+                                    <img src="{% static "main/img/houses/neonbrand-263851-unsplash.jpg" %}" alt="img">
                                 </a>
                                 <div class="aa-tag for-sale">
                                     11 Property
@@ -202,7 +210,7 @@
                         <div class="col-md-4">
                             <article class="aa-properties-item">
                                 <a href="#" class="aa-properties-item-img">
-                                    <img src="{% static "main/img/item/2.jpg" %}" alt="img">
+                                    <img src="{% static "main/img/houses/nathan-fertig-FBXuXp57eM0-unsplash.jpg" %}" alt="img">
                                 </a>
                                 <div class="aa-tag for-rent">
                                     11 Property
@@ -230,7 +238,7 @@
                         <div class="col-md-4">
                             <article class="aa-properties-item">
                                 <a href="#" class="aa-properties-item-img">
-                                    <img src="{% static "main/img/item/3.jpg" %}" alt="img">
+                                    <img src="{% static "main/img/houses/Kitchen.jpg" %}" alt="img">
                                 </a>
                                 <div class="aa-tag sold-out">
                                     11 Property
@@ -263,6 +271,89 @@
     </section>
     <!-- / Latest property -->
 
+  <!-- Service section -->
+  <section id="aa-service">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="aa-service-area">
+            <div class="aa-title">
+              <h2>Our Service</h2>
+              <span></span>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum sit ea nobis quae vero voluptatibus.</p>
+            </div>
+            <!-- service content -->
+            <div class="aa-service-content">
+              <div class="row">
+                <div class="col-md-3">
+                  <div class="aa-single-service">
+                    <div class="aa-service-icon">
+                      <span class="fa fa-home"></span>
+                    </div>
+                    <div class="aa-single-service-content">
+                      <h4><a href="#">Property Sale</a></h4>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto repellendus quasi asperiores itaque dolorem at.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-3">
+                  <div class="aa-single-service">
+                    <div class="aa-service-icon">
+                      <span class="fa fa-check"></span>
+                    </div>
+                    <div class="aa-single-service-content">
+                      <h4><a href="#">Property Rent</a></h4>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto repellendus quasi asperiores itaque dolorem at.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-3">
+                  <div class="aa-single-service">
+                    <div class="aa-service-icon">
+                      <span class="fa fa-crosshairs"></span>
+                    </div>
+                    <div class="aa-single-service-content">
+                      <h4><a href="#">Property Development</a></h4>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto repellendus quasi asperiores itaque dolorem at.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-3">
+                  <div class="aa-single-service">
+                    <div class="aa-service-icon">
+                      <span class="fa fa-bar-chart-o"></span>
+                    </div>
+                    <div class="aa-single-service-content">
+                      <h4><a href="#">Market Analysis</a></h4>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto repellendus quasi asperiores itaque dolorem at.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- / Service section -->
+
+  <!-- Promo Banner Section -->
+  <section id="aa-promo-banner">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="aa-promo-banner-area">
+            <h3>Find Your Best Property</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus, ex illum corporis quibusdam numquam quisquam optio explicabo. Officiis odit quia odio dignissimos eius repellat id!</p>
+            <a href="#" class="aa-view-btn">View Details</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- / Promo Banner Section -->
+
+
+
 {% endblock %}
-
-

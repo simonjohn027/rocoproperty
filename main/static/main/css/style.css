@@ -39,7 +39,7 @@
 body {
   background-color: #ffffff;
   font-family: 'Stylish', sans-serif;
-  color: #f0e7e7;
+  color: rgba(8, 5, 17, 0.98);
   font-size: 15px;
   overflow-x: hidden;
 }
@@ -65,7 +65,11 @@ a:focus {
   outline: none;
   text-decoration: none;
 }
-
+.navbar-nav > li > a {
+    padding-top: 3px;
+    padding-bottom: 4px;
+    border-radius: 5px;
+}
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Stylish', sans-serif;
 }
@@ -1332,7 +1336,7 @@ img {
   display: inline;
   float: left;
   position: relative;
-  min-height: 400px;
+  min-height: 550px;
   width: 100%;
 }
 #aa-property-header::before {
@@ -1348,7 +1352,7 @@ img {
   display: inline;
   float: left;
   padding: 150px 0 50px;
-  text-align: center;
+  text-align: left;
   width: 100%;
 }
 #aa-property-header .aa-property-header-inner h2 {
@@ -1487,7 +1491,7 @@ img {
   background-color: #f8f8f8;
   display: inline;
   float: left;
-  padding: 10px 20px;
+  padding: 1px;
   width: 100%;
 }
 #aa-properties .aa-properties-sidebar .aa-properties-single-sidebar {
@@ -2736,6 +2740,8 @@ img {
   #aa-menu-area .main-navbar .navbar-nav li a {
     padding-left: 8px;
     padding-right: 8px;
+    padding-top: 2px;
+     padding-bottom: 2px;
   }
 
   #aa-advance-search .aa-advance-search-area .aa-advance-search-top .aa-single-advance-search {

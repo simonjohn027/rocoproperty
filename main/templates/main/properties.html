@@ -1,0 +1,286 @@
+ {% extends 'base.html' %}
+ {%load staticfiles %}
+ {% block staticfiles %}
+  <style>
+     #aa-menu-area {
+            left: 0;
+            padding-top: 0px !important;
+            position: relative !important;
+            right: 0;
+            top: 35px;
+            width: 100%;
+            padding-bottom: 15px;
+            z-index: 99;
+            color:black!important;
+}
+  #aa-menu-area .main-navbar .navbar-nav li a{
+      color: #171313 !important;
+  }
+  </style>
+ {% endblock %}
+ {% block content %}
+
+  <!-- Start menu section -->
+  <section id="aa-menu-area">
+    <nav class="navbar navbar-default main-navbar" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <!-- FOR MOBILE VIEW COLLAPSED BUTTON -->
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <!-- LOGO -->
+          <!-- Text based logo -->
+           <!-- <a class="navbar-brand aa-logo" href="index.html"> Home <span>Property</span></a>-->
+           <!-- Image based logo -->
+           <a class="navbar-brand aa-logo-img" href="{% url "index" %}"><img src="{% static "main/img/logo.png" %}" alt="logo"></a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul id="top-menu" class="nav navbar-nav navbar-right aa-main-nav">
+            <li class="active"><a href="index.html">Browser Homes</a></li>
+            <li><a href="gallery.html">List your home</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
+           <li><a href="404.html">FAQ</a></li>
+              <li><a href="contact.html">Login</a></li>
+           <li><a href="404.html">Register</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
+  </section>
+ <!-- Start Properties  -->
+  <section id="aa-properties">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-7">
+          <div class="aa-properties-content">
+            <!-- start properties content head -->
+            <div class="aa-properties-content-head">              
+              <div class="aa-properties-content-head-left">
+                <form action="" class="aa-sort-form">
+                  <label for="">Sort by</label>
+                  <select name="">
+                    <option value="1" selected="Default">Default</option>
+                    <option value="2">Name</option>
+                    <option value="3">Price</option>
+                    <option value="4">Date</option>
+                  </select>
+                </form>
+                <form action="" class="aa-show-form">
+                  <label for="">Show</label>
+                  <select name="">
+                    <option value="1" selected="12">6</option>
+                    <option value="2">12</option>
+                    <option value="3">24</option>
+                  </select>
+                </form>
+              </div>
+              <div class="aa-properties-content-head-right">
+                <a id="aa-grid-properties" href="#"><span class="fa fa-th"></span></a>
+                <a id="aa-list-properties" href="#"><span class="fa fa-list"></span></a>
+              </div>            
+            </div>
+            <!-- Start properties content body -->
+            <div class="aa-properties-content-body">
+              <ul class="aa-properties-nav">
+                  <li>
+                  <article class="aa-properties-item">
+                    <a class="aa-properties-item-img" href="#">
+                      <img alt="img" src="{% static "main/img/houses/Kitchen.jpg" %}">
+                    </a>
+                    <div class="aa-tag sold-out">
+                      Waitlist
+                    </div>
+                    <div class="aa-properties-item-content">
+                      <div class="aa-properties-info">
+                        <span>5 Rooms</span>
+                        <span>2 Beds</span>
+                        <span>3 Baths</span>
+                        <span>1100 SQ FT</span>
+                      </div>
+                      <div class="aa-properties-about">
+                        <h3><a href="#">Appartment Title</a></h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim molestiae vero ducimus quibusdam odit vitae.</p>
+                      </div>
+                      <div class="aa-properties-detial">
+                        <span class="aa-price">
+                          $35000
+                        </span>
+                        <a class="aa-secondary-btn" href="#">View Details</a>
+                      </div>
+                    </div>
+                  </article>
+                </li>
+                <li>
+                  <article class="aa-properties-item">
+                    <a class="aa-properties-item-img" href="#">
+                      <img alt="img" src="{% static "main/img/houses/neonbrand-263851-unsplash.jpg" %}">
+                    </a>
+                    <div class="aa-tag for-rent">
+                      Move In
+                    </div>
+                    <div class="aa-properties-item-content">
+                      <div class="aa-properties-info">
+                        <span>5 Rooms</span>
+                        <span>2 Beds</span>
+                        <span>3 Baths</span>
+                        <span>1100 SQ FT</span>
+                      </div>
+                      <div class="aa-properties-about">
+                        <h3><a href="#">Appartment Title</a></h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim molestiae vero ducimus quibusdam odit vitae.</p>
+                      </div>
+                      <div class="aa-properties-detial">
+                        <span class="aa-price">
+                          $35000
+                        </span>
+                        <a class="aa-secondary-btn" href="#">View Details</a>
+                      </div>
+                    </div>
+                  </article>
+                </li>
+                <li>
+                  <article class="aa-properties-item">
+                    <a class="aa-properties-item-img" href="#">
+                      <img alt="img" src="{% static "main/img/houses/Kitchen.jpg" %}">
+                    </a>
+                    <div class="aa-tag sold-out">
+                      Waitlist
+                    </div>
+                    <div class="aa-properties-item-content">
+                      <div class="aa-properties-info">
+                        <span>5 Rooms</span>
+                        <span>2 Beds</span>
+                        <span>3 Baths</span>
+                        <span>1100 SQ FT</span>
+                      </div>
+                      <div class="aa-properties-about">
+                        <h3><a href="#">Appartment Title</a></h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim molestiae vero ducimus quibusdam odit vitae.</p>
+                      </div>
+                      <div class="aa-properties-detial">
+                        <span class="aa-price">
+                          $35000
+                        </span>
+                        <a class="aa-secondary-btn" href="#">View Details</a>
+                      </div>
+                    </div>
+                  </article>
+                </li>
+                  <li>
+                  <article class="aa-properties-item">
+                    <a class="aa-properties-item-img" href="#">
+                      <img alt="img" src="{% static "main/img/houses/Kitchen.jpg" %}">
+                    </a>
+                    <div class="aa-tag sold-out">
+                      Waitlist
+                    </div>
+                    <div class="aa-properties-item-content">
+                      <div class="aa-properties-info">
+                        <span>5 Rooms</span>
+                        <span>2 Beds</span>
+                        <span>3 Baths</span>
+                        <span>1100 SQ FT</span>
+                      </div>
+                      <div class="aa-properties-about">
+                        <h3><a href="#">Appartment Title</a></h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim molestiae vero ducimus quibusdam odit vitae.</p>
+                      </div>
+                      <div class="aa-properties-detial">
+                        <span class="aa-price">
+                          $35000
+                        </span>
+                        <a class="aa-secondary-btn" href="#">View Details</a>
+                      </div>
+                    </div>
+                  </article>
+                </li>
+
+              </ul>
+            </div>
+            <!-- Start properties content bottom -->
+            <div class="aa-properties-content-bottom">
+              <nav>
+                <ul class="pagination">
+                  <li>
+                    <a href="#" aria-label="Previous">
+                      <span aria-hidden="true">&laquo;</span>
+                    </a>
+                  </li>
+                  <li><a href="#">1</a></li>
+                  <li><a href="#">2</a></li>
+                  <li class="active"><a href="#">3</a></li>
+                  <li><a href="#">4</a></li>
+                  <li><a href="#">5</a></li>
+                  <li>
+                    <a href="#" aria-label="Next">
+                      <span aria-hidden="true">&raquo;</span>
+                    </a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+        </div>
+        <!-- Start properties sidebar -->
+        <div class="col-md-5">
+          <aside class="aa-properties-sidebar">
+            <!-- Start Single properties sidebar -->
+            <div class="aa-properties-single-sidebar">
+              <iframe width="100%" height="450" frameborder="0" allowfullscreen="" style="border:0"
+                      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6851.201919469417!2d-86.11773906635584!
+                      3d33.47324776828677!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x888bdb60cc49c571%3A0x40451
+                      ca6baf275c7!2s36008+AL-77%2C+Talladega%2C+AL+35160%2C+USA!5e0!3m2!1sbn!2sbd!4v1460452919256">
+
+              </iframe>
+            </div>
+            <!-- Start Single properties sidebar -->
+            <div class="aa-properties-single-sidebar">
+              <h3>Populer Properties</h3>
+              <div class="media">
+                <div class="media-left">
+                  <a href="#">
+                    <img class="media-object" src="{% static "main/img/houses/neonbrand-263851-unsplash.jpg" %}" alt="img">
+                  </a>
+                </div>
+                <div class="media-body">
+                  <h4 class="media-heading"><a href="#">This is Title</a></h4>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>                
+                  <span>$65000</span>
+                </div>              
+              </div>
+              <div class="media">
+                <div class="media-left">
+                  <a href="#">
+                    <img class="media-object" src="{% static "main/img/houses/neonbrand-263851-unsplash.jpg" %}" alt="img">
+                  </a>
+                </div>
+                <div class="media-body">
+                  <h4 class="media-heading"><a href="#">This is Title</a></h4>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>                
+                  <span>$65000</span>
+                </div>              
+              </div>
+              <div class="media">
+                <div class="media-left">
+                  <a href="#">
+                    <img class="media-object" src="{% static "main/img/houses/neonbrand-263851-unsplash.jpg" %}" alt="img">
+                  </a>
+                </div>
+                <div class="media-body">
+                  <h4 class="media-heading"><a href="#">This is Title</a></h4>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>                
+                  <span>$65000</span>
+                </div>              
+              </div>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- / Properties  -->
+ {% endblock %}
