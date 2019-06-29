@@ -80,7 +80,9 @@ h2 {
   line-height: 40px;
   margin: 0;
 }
-
+h3, .h3{
+    font-size: 18px !important;
+}
 img {
   border: none;
 }
@@ -789,7 +791,7 @@ img {
   border-bottom: 1px solid #ddd;
   display: inline;
   float: left;
-  padding: 10px;
+  padding: 6px;
   width: 100%;
   text-align: left;
 }
@@ -801,7 +803,11 @@ img {
   display: inline;
   float: left;
   width: 100%;
-  padding: 10px;
+    padding-top: 5px;
+    padding-right:10px;
+    padding-bottom: 5px;
+    padding-left: 10px;
+
 }
 .aa-properties-item .aa-properties-item-content .aa-properties-about h3 {
   margin-top: 0px;
@@ -813,7 +819,10 @@ img {
   border-top: 1px solid #ddd;
   display: inline;
   float: left;
-  padding: 10px;
+  padding-top: 5px;
+    padding-right:10px;
+    padding-bottom: 5px;
+    padding-left: 10px;
   width: 100%;
 }
 .aa-properties-item .aa-properties-item-content .aa-properties-detial .aa-price {
@@ -1440,7 +1449,7 @@ img {
   display: block;
   float: left;
   margin: 0 0 20px 30px;
-  width: 46.1%;
+  width: 45.1%;
 }
 #aa-properties .aa-properties-content .aa-properties-content-body .aa-list-view {
   margin-left: 0;

@@ -17,7 +17,7 @@
       color: #171313 !important;
   }
   #map {
-        height: 400px;  /* The height is 400 pixels */
+        height: 600px;  /* The height is 400 pixels */
         width: 100%;  /* The width is the width of the web page */
        }
 
@@ -45,9 +45,9 @@
         </div>
         <div id="navbar" class="navbar-collapse collapse">
           <ul id="top-menu" class="nav navbar-nav navbar-right aa-main-nav">
-            <li class="active"><a href="index.html">Browser Homes</a></li>
-            <li><a href="gallery.html">List your home</a></li>
-            <li><a href="contact.html">CONTACT</a></li>
+            <li class="active"><a href="{% url "list" %}">Browse Homes</a></li>
+            <li><a href="{% url 'property' %}">List your home</a></li>
+            <li><a href="{% url 'contact' %}">CONTACT</a></li>
            <li><a href="404.html">FAQ</a></li>
               <li><a href="contact.html">Login</a></li>
            <li><a href="404.html">Register</a></li>
@@ -60,7 +60,7 @@
   <section id="aa-properties">
     <div class="container-fluid">
       <div class="row">
-        <div class="col-md-7">
+        <div class="col-md-6">
           <div class="aa-properties-content">
             <!-- start properties content head -->
             <div class="aa-properties-content-head">              
@@ -231,7 +231,7 @@
           </div>
         </div>
         <!-- Start properties sidebar -->
-        <div class="col-md-5">
+        <div class="sticky-top col-md-6">
           <aside class="aa-properties-sidebar">
             <!-- Start Single properties sidebar -->
             <div class="aa-properties-single-sidebar">
@@ -245,45 +245,7 @@
 
             </div>
             <!-- Start Single properties sidebar -->
-            <div class="aa-properties-single-sidebar">
-              <h3>Populer Properties</h3>
-              <div class="media">
-                <div class="media-left">
-                  <a href="#">
-                    <img class="media-object" src="{% static "main/img/houses/neonbrand-263851-unsplash.jpg" %}" alt="img">
-                  </a>
-                </div>
-                <div class="media-body">
-                  <h4 class="media-heading"><a href="#">This is Title</a></h4>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>                
-                  <span>$65000</span>
-                </div>              
-              </div>
-              <div class="media">
-                <div class="media-left">
-                  <a href="#">
-                    <img class="media-object" src="{% static "main/img/houses/neonbrand-263851-unsplash.jpg" %}" alt="img">
-                  </a>
-                </div>
-                <div class="media-body">
-                  <h4 class="media-heading"><a href="#">This is Title</a></h4>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>                
-                  <span>$65000</span>
-                </div>              
-              </div>
-              <div class="media">
-                <div class="media-left">
-                  <a href="#">
-                    <img class="media-object" src="{% static "main/img/houses/neonbrand-263851-unsplash.jpg" %}" alt="img">
-                  </a>
-                </div>
-                <div class="media-body">
-                  <h4 class="media-heading"><a href="#">This is Title</a></h4>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>                
-                  <span>$65000</span>
-                </div>              
-              </div>
-            </div>
+
           </aside>
         </div>
       </div>
