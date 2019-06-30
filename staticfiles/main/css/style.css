@@ -38,8 +38,8 @@
 
 body {
   background-color: #ffffff;
-  font-family: "Open Sans", sans-serif;
-  color: #333333;
+  font-family: 'Stylish', sans-serif;
+  color: rgba(8, 5, 17, 0.98);
   font-size: 15px;
   overflow-x: hidden;
 }
@@ -65,9 +65,13 @@ a:focus {
   outline: none;
   text-decoration: none;
 }
-
+.navbar-nav > li > a {
+    padding-top: 3px;
+    padding-bottom: 4px;
+    border-radius: 5px;
+}
 h1, h2, h3, h4, h5, h6 {
-  font-family: "Poppins", sans-serif;
+  font-family: 'Stylish', sans-serif;
 }
 
 h2 {
@@ -76,7 +80,9 @@ h2 {
   line-height: 40px;
   margin: 0;
 }
-
+h3, .h3{
+    font-size: 18px !important;
+}
 img {
   border: none;
 }
@@ -497,26 +503,26 @@ img {
   height: 700px;
 }
 #aa-slider .aa-slider-area .aa-top-slider .aa-top-slider-single .aa-top-slider-content {
-  background-color: rgba(255, 255, 255, 0.8);
-  left: 20%;
+  background-color: rgba(255, 255, 255, 0);
+  left: 10%;
   padding: 30px;
   position: absolute;
   top: 40%;
   z-index: 999;
+  width:40%;
 }
 #aa-slider .aa-slider-area .aa-top-slider .aa-top-slider-single .aa-top-slider-content .aa-top-slider-catg {
   font-family: "Poppins", sans-serif;
-  font-size: 25px;
-  font-weight: bold;
+  font-size: 1rem;
+  font-weight: normal;
   letter-spacing: 5px;
-  text-transform: uppercase;
-  color: #555;
+
   line-height: 25px;
 }
 #aa-slider .aa-slider-area .aa-top-slider .aa-top-slider-single .aa-top-slider-content .aa-top-slider-title {
-  color: #555;
-  font-size: 40px;
-  font-weight: bold;
+  color: #fff;
+  font-size:19px;
+  font-weight: normal;
   padding-bottom: 5px;
   text-transform: uppercase;
 }
@@ -529,7 +535,7 @@ img {
 #aa-slider .aa-slider-area .aa-top-slider .aa-top-slider-single .aa-top-slider-content .aa-top-slider-off {
   font-size: 14px;
   font-family: "Poppins", sans-serif;
-  color: #555;
+  color: #fff;
   display: inline-block;
   margin-top: 10px;
   font-weight: bold;
@@ -785,7 +791,7 @@ img {
   border-bottom: 1px solid #ddd;
   display: inline;
   float: left;
-  padding: 10px;
+  padding: 6px;
   width: 100%;
   text-align: left;
 }
@@ -797,7 +803,11 @@ img {
   display: inline;
   float: left;
   width: 100%;
-  padding: 10px;
+    padding-top: 5px;
+    padding-right:10px;
+    padding-bottom: 5px;
+    padding-left: 10px;
+
 }
 .aa-properties-item .aa-properties-item-content .aa-properties-about h3 {
   margin-top: 0px;
@@ -809,7 +819,10 @@ img {
   border-top: 1px solid #ddd;
   display: inline;
   float: left;
-  padding: 10px;
+  padding-top: 5px;
+    padding-right:10px;
+    padding-bottom: 5px;
+    padding-left: 10px;
   width: 100%;
 }
 .aa-properties-item .aa-properties-item-content .aa-properties-detial .aa-price {
@@ -904,7 +917,7 @@ img {
 ====================*/
 
 #aa-promo-banner {
-
+    background-image: url("../img/promobanner.jpg");
   background-attachment: fixed;
   background-position: center center;
   background-size: cover;
@@ -1325,14 +1338,14 @@ img {
 ====================*/
 
 #aa-property-header {
-
+    background-image: url("../img/banner.jpg");
   background-attachment: fixed;
   background-position: center center;
   background-size: cover;
   display: inline;
   float: left;
   position: relative;
-  min-height: 400px;
+  min-height: 550px;
   width: 100%;
 }
 #aa-property-header::before {
@@ -1348,7 +1361,7 @@ img {
   display: inline;
   float: left;
   padding: 150px 0 50px;
-  text-align: center;
+  text-align: left;
   width: 100%;
 }
 #aa-property-header .aa-property-header-inner h2 {
@@ -1356,6 +1369,11 @@ img {
   letter-spacing: 0.5px;
   margin-top: 65px;
   text-transform: uppercase;
+}
+#aa-property-header .aa-property-header-inner p {
+  color: #fff;
+  letter-spacing: 0.5px;
+
 }
 #aa-property-header .aa-property-header-inner .breadcrumb {
   background: none;
@@ -1436,7 +1454,7 @@ img {
   display: block;
   float: left;
   margin: 0 0 20px 30px;
-  width: 46.1%;
+  width: 45.1%;
 }
 #aa-properties .aa-properties-content .aa-properties-content-body .aa-list-view {
   margin-left: 0;
@@ -1487,7 +1505,7 @@ img {
   background-color: #f8f8f8;
   display: inline;
   float: left;
-  padding: 10px 20px;
+  padding: 1px;
   width: 100%;
 }
 #aa-properties .aa-properties-sidebar .aa-properties-single-sidebar {
@@ -2736,6 +2754,8 @@ img {
   #aa-menu-area .main-navbar .navbar-nav li a {
     padding-left: 8px;
     padding-right: 8px;
+    padding-top: 2px;
+     padding-bottom: 2px;
   }
 
   #aa-advance-search .aa-advance-search-area .aa-advance-search-top .aa-single-advance-search {
