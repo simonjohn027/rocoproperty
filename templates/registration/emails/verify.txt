@@ -1,0 +1,14 @@
+Hello,
+
+Please activate your account for {{ email }} by clicking the link below:
+
+
+<a href ='{{ path }}'>ACTIVATE</a>
+
+
+
+
+Once you activate, you can login!
+
+Thank you,
+Property233
