@@ -11,3 +11,6 @@ def property(request):
 
 def contact(request):
     return  render(request, 'main/contact.html')
+
+def error_404_view(request, exception):
+    return render(request,'404.html')

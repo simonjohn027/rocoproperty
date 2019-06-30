@@ -25,7 +25,41 @@ SECRET_KEY = '38#nr$pi51zd#3f3b@4$uc%_3fyn8j#$d$eigxs)1(n1+uld#8'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['rocoproperty.herokuapp.com','127.0.0.1']
+ALLOWED_HOSTS = ['rocoproperty.herokuapp.com','127.0.0.1','localhost']
+
+
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_HOST_USER = 'officespire01@gmail.com' # sendgrid
+EMAIL_HOST_PASSWORD = os.environ.get('EMAIL_HOST_PASSWORD', 'Money 2018*')
+EMAIL_PORT = 587
+EMAIL_USE_TLS = True
+DEFAULT_FROM_EMAIL = 'SIMON JOHN <officespire01@gmail.com>'
+BASE_URL = '127.0.0.1:8000'
+
+MANAGERS = (
+    ('SIMON JOHN', "officespire01@gmail.com"),
+)
+
+ADMINS = MANAGERS
+
+
+
+AUTH_USER_MODEL = 'accs.User' #changes the built-in user model to ours
+
+LOGIN_URL  = '/login/'
+LOGIN_REDIRECT_URL = '/'
+
+LOGOUT_REDIRECT_URL = '/'
+LOGOUT_URL = '/logout/'
+
+FORCE_SESSION_TO_ONE = False
+FORCE_INACTIVE_USER_ENDSESSION= False
+
+
+
+
+SOCIAL_AUTH_GOOGLE_OAUTH2_KEY = '891619607331-5n9jicvdlgpgr9jb212trr1etn8n1rap.apps.googleusercontent.com'
+SOCIAL_AUTH_GOOGLE_OAUTH2_SECRET = 'VRPNxrYYjZr_ZRsJf1e5HfsJ'
 
 
 # Application definition
@@ -39,6 +73,8 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'main.apps.MainConfig',
+    'accs.apps.AccsConfig',
+    'social_django',
 ]
 
 MIDDLEWARE = [
@@ -50,6 +86,7 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'social_django.middleware.SocialAuthExceptionMiddleware',
 ]
 
 ROOT_URLCONF = 'property.urls'
@@ -66,6 +103,9 @@ TEMPLATES = [
                 'django.template.context_processors.request',
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
+
+                'social_django.context_processors.backends',
+                'social_django.context_processors.login_redirect',
             ],
         },
     },
@@ -103,6 +143,35 @@ AUTH_PASSWORD_VALIDATORS = [
     },
 ]
 
+SOCIAL_AUTH_PIPELINE = (
+    'social_core.pipeline.social_auth.social_details',
+    'social_core.pipeline.social_auth.social_uid',
+    'social_core.pipeline.social_auth.auth_allowed',
+    'social_core.pipeline.social_auth.social_user',
+    'social_core.pipeline.user.get_username',
+    'social_core.pipeline.user.create_user',
+    'social_core.pipeline.social_auth.associate_user',
+    'social_core.pipeline.social_auth.load_extra_data',
+    'social_core.pipeline.user.user_details',
+)
+
+AUTHENTICATION_BACKENDS = (
+    'social_core.backends.google.GoogleOAuth2',
+    'social_core.backends.twitter.TwitterOAuth',
+    'social_core.backends.facebook.FacebookOAuth2',
+
+    'django.contrib.auth.backends.ModelBackend',
+)
+
+
+
+
+#SOCIAL_AUTH_POSTGRES_JSONFIELD = True
+
+
+
+#Auths
+SOCIAL_AUTH_URL_NAMESPACE = 'social'
 
 # Internationalization
 # https://docs.djangoproject.com/en/2.2/topics/i18n/

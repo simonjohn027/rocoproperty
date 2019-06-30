@@ -917,7 +917,7 @@ img {
 ====================*/
 
 #aa-promo-banner {
-
+    background-image: url("../img/promobanner.jpg");
   background-attachment: fixed;
   background-position: center center;
   background-size: cover;
@@ -1338,7 +1338,7 @@ img {
 ====================*/
 
 #aa-property-header {
-
+    background-image: url("../img/banner.jpg");
   background-attachment: fixed;
   background-position: center center;
   background-size: cover;
@@ -1369,6 +1369,11 @@ img {
   letter-spacing: 0.5px;
   margin-top: 65px;
   text-transform: uppercase;
+}
+#aa-property-header .aa-property-header-inner p {
+  color: #fff;
+  letter-spacing: 0.5px;
+
 }
 #aa-property-header .aa-property-header-inner .breadcrumb {
   background: none;

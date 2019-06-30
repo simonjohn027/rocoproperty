@@ -22,7 +22,7 @@
               <div class="col-md-6 col-sm-6 col-xs-6">
                 <div class="aa-header-right">
                   <a href="register.html" class="aa-register">Register</a>
-                  <a href="signin.html" class="aa-login">Login</a>
+                  <a href="{% url 'accs:login'%}" class="aa-login">Login</a>
                 </div>
               </div>
             </div>
@@ -53,9 +53,9 @@
         <div id="navbar" class="navbar-collapse collapse">
           <ul id="top-menu" class="nav navbar-nav navbar-right aa-main-nav">
             <li class="active"><a href="{% url 'list' %}">Browse Homes</a></li>
-            <li><a href="gallery.html">List your home</a></li>
+            <li><a href="{% url "property" %}">List your home</a></li>
             <li><a href="{% url 'contact' %}">CONTACT</a></li>
-           <li><a href="404.html">FAQ</a></li>
+           <li><a href="}">FAQ</a></li>
           </ul>
         </div><!--/.nav-collapse -->
       </div>
@@ -69,8 +69,8 @@
       <div class="row">
         <div class="col-md-12">
           <div class="aa-property-header-inner">
-            <h2>Home Propety</h2>
-              <p class="aa-top-slider-location"><i class="fa fa-map-marker"></i>Right At the Heart of Ghana</p>
+            <h2>Property233</h2>
+              <p class="aa-top-slider-location">Used and loved by, landlords and expats</p>
 
           </div>
         </div>
@@ -173,7 +173,8 @@
                 <div class="aa-title">
                     <h2>Latest Properties</h2>
                     <span></span>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum sit ea nobis quae vero voluptatibus.</p>
+                    <p>We take the hassle out of renting,
+                        saving you time and guaranteeing you more money.</p>
                 </div>
                 <div class="aa-latest-properties-content">
                     <div class="row">
@@ -276,7 +277,7 @@
         <div class="col-md-12">
           <div class="aa-service-area">
             <div class="aa-title">
-              <h2>Our Service</h2>
+              <h2>Why work with us?</h2>
               <span></span>
               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum sit ea nobis quae vero voluptatibus.</p>
             </div>

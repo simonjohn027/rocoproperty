@@ -1,0 +1,82 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+{% block staticfiles %}
+    <style>
+        #aa-menu-area {
+            left: 0;
+            padding-top: 0px !important;
+            position: relative !important;
+            right: 0;
+            top: 35px;
+            width: 100%;
+            padding-bottom: 25px;
+            z-index: 99;
+            color: black !important;
+        }
+        #aa-menu-area .main-navbar .navbar-nav li a {
+            color: #171313 !important;
+        }
+
+
+
+    </style>
+{% endblock %}
+{% block content %}
+
+    <!-- Start menu section -->
+    <section id="aa-menu-area">
+        <nav class="navbar navbar-default main-navbar" role="navigation">
+            <div class="container">
+                <div class="navbar-header">
+                    <!-- FOR MOBILE VIEW COLLAPSED BUTTON -->
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar"
+                            aria-expanded="false" aria-controls="navbar">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <!-- LOGO -->
+                    <!-- Text based logo -->
+                    <!-- <a class="navbar-brand aa-logo" href="index.html"> Home <span>Property</span></a>-->
+                    <!-- Image based logo -->
+                    <a class="navbar-brand aa-logo-img" href="{% url "index" %}"><img
+                            src="{% static "main/img/logo.png" %}" alt="logo"></a>
+                </div>
+                <div id="navbar" class="navbar-collapse collapse">
+                    <ul id="top-menu" class="nav navbar-nav navbar-right aa-main-nav">
+                        <li class="active"><a href="{% url "list" %}">Browse Homes</a></li>
+                        <li><a href="{% url 'property' %}">List your home</a></li>
+                        <li><a href="{% url 'contact' %}">CONTACT</a></li>
+                        <li><a href="404.html">FAQ</a></li>
+                        <li><a href="contact.html">Login</a></li>
+                        <li><a href="404.html">Register</a></li>
+                    </ul>
+                </div><!--/.nav-collapse -->
+            </div>
+        </nav>
+    </section>
+
+ >
+
+
+
+
+    <!-- Start Properties  -->
+     <section id="aa-error">
+    <div class="container">
+      <row>
+        <div class="col-md-12">
+          <div class="aa-error-area">
+            <h2>404</h2>
+            <p><span class="fa fa-warning"></span>Oops! The Page you requested was not found!</p>
+            <a href="#">Back Home</a>
+          </div>
+        </div>
+      </row>
+    </div>
+  </section>
+
+
+    <!-- / Properties  -->
+{% endblock %}
