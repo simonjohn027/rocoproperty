@@ -1,0 +1,268 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+{% block staticfiles %}
+    <style>
+        #aa-menu-area {
+            left: 0;
+            padding-top: 0px !important;
+            position: relative !important;
+            right: 0;
+            top: 35px;
+            width: 100%;
+            padding-bottom: 25px;
+            z-index: 99;
+            color: black !important;
+        }
+
+        #aa-property-header {
+
+            background-attachment: fixed;
+            background-position: center center;
+            background-size: cover;
+            display: inline;
+            float: left;
+            position: relative;
+            min-height: 250px;
+            width: 100%;
+        }
+
+        #aa-menu-area .main-navbar .navbar-nav li a {
+            color: #171313 !important;
+        }
+
+        #map {
+            height: 600px; /* The height is 400 pixels */
+            width: 100%; /* The width is the width of the web page */
+        }
+
+    </style>
+{% endblock %}
+{% block content %}
+
+    <!-- Start menu section -->
+    <section id="aa-menu-area">
+        <nav class="navbar navbar-default main-navbar" role="navigation">
+            <div class="container">
+                <div class="navbar-header">
+                    <!-- FOR MOBILE VIEW COLLAPSED BUTTON -->
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar"
+                            aria-expanded="false" aria-controls="navbar">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <!-- LOGO -->
+                    <!-- Text based logo -->
+                    <!-- <a class="navbar-brand aa-logo" href="index.html"> Home <span>Property</span></a>-->
+                    <!-- Image based logo -->
+                    <a class="navbar-brand aa-logo-img" href="{% url "index" %}"><img
+                            src="{% static "main/img/logo.png" %}" alt="logo"></a>
+                </div>
+                <div id="navbar" class="navbar-collapse collapse">
+                    <ul id="top-menu" class="nav navbar-nav navbar-right aa-main-nav">
+                        <li class="active"><a href="{% url "list" %}">Browse Homes</a></li>
+                        <li><a href="{% url "owner" %}">Land Owners</a></li>
+                        <li><a href="{% url 'contact' %}">CONTACT</a></li>
+                        <li><a href="contact.html">Login</a></li>
+                        <li><a href="404.html">Register</a></li>
+                    </ul>
+                </div><!--/.nav-collapse -->
+            </div>
+        </nav>
+    </section>
+
+    <!-- Start Proerty header  -->
+
+    <section id="aa-property-header">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="aa-property-header-inner">
+                        <h2>A smart partner for your property </h2>
+                        <p>Used and loved by , landlords and expats
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Proerty header  -->
+
+    <!--Land Owner-->
+    <section id="aa-properties">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 col-sm-4">
+                    <div class="aa-title">
+                                        <h2>Partner With Us</h2>
+                                        <span></span>
+                                    </div>
+                    <p>Take your property from vacant to occupied in four easy steps.</p>
+                    <p>With access to our network of thousands of vetted professionals,
+                        Property233 is the easiest way to generate income on your rental property.</p>
+                    <a href="" style="color: #0cb8b6; padding-top:10px;">Get Started</a>
+                </div>
+                <div class="col-md-4 col-sm-4">
+                    <div class="service-info">
+                        <div class="icon">
+                            <i class="fas fa-phone-square-alt"></i>
+                        </div>
+                        <div class="icon-info">
+                            <h4>Get In touch</h4>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                                incididunt ut labore et dolore magna aliqua.</p>
+
+                        </div>
+                    </div>
+                    <div class="service-info">
+                        <div class="icon">
+                            <i class="fas fa-map-marked-alt"></i>
+                        </div>
+                        <div class="icon-info">
+                            <h4>Schedule a site visit</h4>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                                incididunt ut labore et dolore magna aliqua.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-4">
+                    <div class="service-info">
+                        <div class="icon">
+                            <i class="fas fa-pen-fancy"></i>
+                        </div>
+                        <div class="icon-info">
+                            <h4>Sign Agreement</h4>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                                incididunt ut labore et dolore magna aliqua.</p>
+                        </div>
+                    </div>
+                    <div class="service-info">
+                        <div class="icon">
+                           <i class="fas fa-chart-line"></i>
+                        </div>
+                        <div class="icon-info">
+                            <h4>Earn rental income</h4>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                                incididunt ut labore et dolore magna aliqua.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--/ Land Owner-->
+
+    <!-- About us -->
+    <section id="aa-about-us">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="aa-about-us-area">
+                        <div class="row">
+                            <div class="col-md-7">
+                                <div class="aa-about-us-right">
+                                    <div class="aa-title">
+                                        <h2>About Us</h2>
+                                        <span></span>
+                                    </div>
+                                    <div style="visibility: visible;" class="col-sm-9 more-features-box">
+                        <div class="more-features-box-text">
+                            <div class="more-features-box-text-icon"><i class="fa fa-angle-right"
+                                                                        aria-hidden="true"></i></div>
+                            <div class="more-features-box-text-description">
+                                <h3>Guaranteed Increased Returns </h3>
+                                <p>
+                                    We understand each property owner is unique and work together to better understand
+                                    your goals. Through our tech-enabled intelligent operations, our partners are able
+                                    to achieve higher real estate returns while offering tenants a better experience
+                                </p>
+                            </div>
+                        </div>
+                        <div class="more-features-box-text">
+                            <div class="more-features-box-text-icon"><i class="fa fa-angle-right"
+                                                                        aria-hidden="true"></i></div>
+                            <div class="more-features-box-text-description">
+                                <h3>World-Class Property Management</h3>
+                                <p>
+                                    Your property is maintained and run on high standards, including standardized
+                                    financial reporting and budgeting. Every property owner is paired with a dedicated
+                                    account management team who provide 24/7 support to you. Our staff works tirelessly
+                                    to provide your tenants with the best experience in Ghana
+                                </p>
+                            </div>
+                        </div>
+                        <div class="more-features-box-text">
+                            <div class="more-features-box-text-icon"><i class="fa fa-angle-right"
+                                                                        aria-hidden="true"></i></div>
+                            <div class="more-features-box-text-description">
+                                <h3>Low Vacancy Rates</h3>
+                                <p>Our signature 6-months deposit as compared to the standard 2-year deposit, enables us
+                                    to obtain low vacancy rates.
+                                    Our social media, built-in brand awareness, and SEO and paid media efforts, helps us
+                                    achieve high volume of prospective renters. Our trained rental team admits verified
+                                    tenants into your property which guarantees your property is being used
+                                    responsibly.</p>
+                            </div>
+                        </div>
+
+                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-5">
+                                <div class="aa-about-us-left">
+                                    <img src="{% static "main/img/sidepic2.webp" %}" alt="image">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- / About us -->
+    <!-- Client Testimonial -->
+    <section id="aa-client-testimonial">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="aa-client-testimonial-area">
+                        <div class="aa-title">
+                            <h2>What Client Say</h2>
+                            <span></span>
+                            <p>We take the hassle out of renting, saving you time and guaranteeing you more money.</p>
+                        </div>
+                        <!-- testimonial content -->
+                        <div class="aa-testimonial-content">
+                            <!-- testimonial slider -->
+                            <ul class="aa-testimonial-slider">
+                                <li>
+                                    <div class="aa-testimonial-single">
+                                        <div class="aa-testimonial-img">
+                                            <img src="{% static "main/img/slider/test.png" %}" alt="testimonial img">
+                                        </div>
+                                        <div class="aa-testimonial-info">
+                                            <p>Property233 makes my life much easier with no stress.
+                                                They filled my property with amazing tenants.
+                                                My home is always clean whenever I return to
+                                                Ghana and I receive my rent every month in Canada.</p>
+                                        </div>
+                                        <div class="aa-testimonial-bio">
+                                            <p>Yaa Birago</p>
+                                            <span>Canada.</span>
+                                        </div>
+                                    </div>
+                                </li>
+
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Client Testimonial -->
+
+
+    <!-- / Properties  -->
+{% endblock %}

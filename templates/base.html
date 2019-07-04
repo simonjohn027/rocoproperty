@@ -12,6 +12,7 @@
 
     <!-- Font awesome -->
     <link href="{% static  "main/css/font-awesome.css" %}" rel="stylesheet">
+    <script async src="https://kit.fontawesome.com/f22fa11d1d.js"></script>
     <!-- Bootstrap -->
     <link href="{% static "main/css/bootstrap.css" %}" rel="stylesheet">
     <!-- slick slider -->
@@ -70,19 +71,18 @@
                         </div>
                         <div class="col-md-3 col-sm-6 col-xs-12">
                             <div class="aa-footer-middle">
-                                <a href="#"><i class="fa fa-facebook"></i></a>
-                                <a href="#"><i class="fa fa-twitter"></i></a>
-                                <a href="#"><i class="fa fa-google-plus"></i></a>
-                                <a href="#"><i class="fa fa-youtube"></i></a>
+                                <a href="#"><i class="fab fa-facebook-square"></i></a>
+                                <a href="#"><i class="fab fa-instagram"></i></a>
+                                <a href="#"><i class="fab fa-whatsapp-square"></i></a>
                             </div>
                         </div>
                         <div class="col-md-6 col-sm-12 col-xs-12">
                             <div class="aa-footer-right">
-                                <a href="#">Home</a>
-                                <a href="#">Support</a>
-                                <a href="#">License</a>
-                                <a href="#">FAQ</a>
-                                <a href="#">Privacy & Term</a>
+                                <a href="{% url "index" %}">Home</a>
+                                <a href="{% url "list" %}">Properties</a>
+                                <a href="{% url "contact" %}">Support</a>
+                                <a href="{% url "owner" %}">Partner</a>
+                                <a href="">Privacy & Term</a>
                             </div>
                         </div>
                     </div>

@@ -917,7 +917,7 @@ img {
 ====================*/
 
 #aa-promo-banner {
-    background-image: url("../img/promobanner.jpg");
+    background-image: url("../img/promobanner.0db66ff24499.jpg");
   background-attachment: fixed;
   background-position: center center;
   background-size: cover;
@@ -1054,7 +1054,7 @@ img {
 
 #aa-client-testimonial {
   background-attachment: fixed;
- background-image: url("../img/promobanner.jpg");
+ background-image: url("../img/promobanner.0db66ff24499.jpg");
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -1338,7 +1338,7 @@ img {
 ====================*/
 
 #aa-property-header {
-    background-image: url("../img/banner.jpg");
+    background-image: url("../img/banner.a0fceff00363.jpg");
   background-attachment: fixed;
   background-position: center center;
   background-size: cover;

@@ -9,6 +9,9 @@ def propertyList(request):
 def property(request):
     return  render(request, 'main/properties-detail.html')
 
+def owners(request):
+    return  render(request, 'main/landowner.html')
+
 def contact(request):
     return  render(request, 'main/contact.html')
 
