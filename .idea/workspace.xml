@@ -2,25 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9cc97fa5-dec5-4e73-9bed-89bdeced4506" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/staticfiles/css/theme-color/bridge-theme.36afdb8d6f8a.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/staticfiles/css/theme-color/bridge-theme.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/staticfiles/css/theme-color/dark-red-theme.ac4b67138ae7.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/staticfiles/css/theme-color/dark-red-theme.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/staticfiles/css/theme-color/green-theme.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/staticfiles/css/theme-color/green-theme.f732f1d402cd.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/staticfiles/css/theme-color/orange-theme.47816ef3ebfd.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/staticfiles/css/theme-color/orange-theme.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/staticfiles/css/theme-color/pink-theme.a89a0d90ab70.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/staticfiles/css/theme-color/pink-theme.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/staticfiles/css/theme-color/purple-theme.39f6d416e42c.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/staticfiles/css/theme-color/purple-theme.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/staticfiles/css/theme-color/red-theme.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/staticfiles/css/theme-color/red-theme.fbaeb59838b9.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/staticfiles/css/theme-color/violet-theme.6b9b602be231.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/staticfiles/css/theme-color/violet-theme.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/staticfiles/css/theme-color/yellow-theme.6feedac79580.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/staticfiles/css/theme-color/yellow-theme.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/staticfiles/staticfiles.json" beforeDir="false" afterPath="$PROJECT_DIR$/staticfiles/staticfiles.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/static/main/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/main/static/main/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/templates/main/properties-detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/main/templates/main/properties-detail.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -30,11 +13,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/main/static/main/css/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="86850">
-              <caret line="3474" selection-start-line="3474" selection-end-line="3474" />
+            <state relative-caret-position="-157">
+              <caret line="1391" column="14" lean-forward="true" selection-start-line="1391" selection-start-column="14" selection-end-line="1391" selection-end-column="14" />
             </state>
           </provider>
         </entry>
@@ -51,8 +34,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/main/templates/main/properties-detail.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2375">
-              <caret line="95" column="4" selection-start-line="95" selection-start-column="4" selection-end-line="97" selection-end-column="28" />
+            <state relative-caret-position="300">
+              <caret line="96" column="29" selection-start-line="96" selection-start-column="29" selection-end-line="96" selection-end-column="29" />
             </state>
           </provider>
         </entry>
@@ -71,15 +54,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="475">
               <caret line="34" column="98" selection-start-line="34" selection-start-column="98" selection-end-line="34" selection-end-column="98" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/staticfiles/css/style.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-26141">
-              <caret line="703" column="25" selection-start-line="703" selection-start-column="25" selection-end-line="703" selection-end-column="25" />
             </state>
           </provider>
         </entry>
@@ -133,6 +107,7 @@
       <find>aa-property-header</find>
       <find>font-family</find>
       <find>Poppins</find>
+      <find>aa-properties</find>
     </findStrings>
     <replaceStrings>
       <replace>accs</replace>
@@ -169,15 +144,15 @@
         <option value="$PROJECT_DIR$/main/admin.py" />
         <option value="$PROJECT_DIR$/main/views.py" />
         <option value="$PROJECT_DIR$/main/urls.py" />
-        <option value="$PROJECT_DIR$/main/templates/main/properties-detail.html" />
         <option value="$PROJECT_DIR$/main/templates/main/properties.html" />
         <option value="$PROJECT_DIR$/main/templates/main/contact.html" />
-        <option value="$PROJECT_DIR$/main/static/main/css/style.css" />
         <option value="$PROJECT_DIR$/main/static/main/css/slick.css" />
         <option value="$PROJECT_DIR$/main/templates/main/index.html" />
         <option value="$PROJECT_DIR$/main/templates/main/landowner.html" />
         <option value="$PROJECT_DIR$/templates/base.html" />
         <option value="$PROJECT_DIR$/staticfiles/css/style.css" />
+        <option value="$PROJECT_DIR$/main/templates/main/properties-detail.html" />
+        <option value="$PROJECT_DIR$/main/static/main/css/style.css" />
       </list>
     </option>
   </component>
@@ -206,7 +181,28 @@
             <path>
               <item name="property" type="b2602c69:ProjectViewProjectNode" />
               <item name="property" type="462c0819:PsiDirectoryNode" />
-              <item name="staticfiles" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="property" type="b2602c69:ProjectViewProjectNode" />
+              <item name="property" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="property" type="b2602c69:ProjectViewProjectNode" />
+              <item name="property" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="property" type="b2602c69:ProjectViewProjectNode" />
+              <item name="property" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="css" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -293,17 +289,18 @@
       <workItem from="1561892887570" duration="13757000" />
       <workItem from="1561912334345" duration="1405000" />
       <workItem from="1562202027332" duration="8814000" />
-      <workItem from="1562685058971" duration="2648000" />
+      <workItem from="1562685058971" duration="3468000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="57351000" />
+    <option name="totallyTimeSpent" value="58171000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="784" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.15885022" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.15885022" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -317,7 +314,7 @@
       <window_info anchor="bottom" id="Version Control" order="8" weight="0.32872504" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" weight="0.32872504" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="11" visible="true" weight="0.33333334" />
+      <window_info anchor="bottom" id="Terminal" order="11" visible="true" weight="0.33333334" />
       <window_info anchor="bottom" id="Python Console" order="12" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -547,20 +544,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/main/static/main/css/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="86850">
-          <caret line="3474" selection-start-line="3474" selection-end-line="3474" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/main/templates/main/properties-detail.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2375">
-          <caret line="95" column="4" selection-start-line="95" selection-start-column="4" selection-end-line="97" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/main/templates/main/properties.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="875">
@@ -599,12 +582,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/main/templates/main/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="321" column="51" selection-start-line="321" selection-start-column="51" selection-end-line="321" selection-end-column="51" />
-        </state>
-      </provider>
+    <entry file="file://$PROJECT_DIR$/staticfiles/css/theme-color/default-theme.css">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/main/templates/main/landowner.html">
       <provider selected="true" editor-type-id="text-editor">
@@ -613,8 +592,26 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/staticfiles/css/theme-color/default-theme.css">
-      <provider selected="true" editor-type-id="text-editor" />
+    <entry file="file://$PROJECT_DIR$/main/templates/main/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="321" column="51" selection-start-line="321" selection-start-column="51" selection-end-line="321" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main/templates/main/properties-detail.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="96" column="29" selection-start-line="96" selection-start-column="29" selection-end-line="96" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/staticfiles/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-9866">
+          <caret line="982" selection-start-line="982" selection-end-line="982" />
+        </state>
+      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/base.html">
       <provider selected="true" editor-type-id="text-editor">
@@ -623,10 +620,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/staticfiles/css/style.css">
+    <entry file="file://$PROJECT_DIR$/main/static/main/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-26141">
-          <caret line="703" column="25" selection-start-line="703" selection-start-column="25" selection-end-line="703" selection-end-column="25" />
+        <state relative-caret-position="-157">
+          <caret line="1391" column="14" lean-forward="true" selection-start-line="1391" selection-start-column="14" selection-end-line="1391" selection-end-column="14" />
         </state>
       </provider>
     </entry>
