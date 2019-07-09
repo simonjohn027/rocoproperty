@@ -2,39 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9cc97fa5-dec5-4e73-9bed-89bdeced4506" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/main/static/main/css/slick.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/main/templates/main/landowner.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/static/main/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/main/static/main/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/static/main/img/about-us.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/static/main/img/banner-ads.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/static/main/img/item/1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/static/main/img/item/2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/static/main/img/item/3.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/static/main/img/item/4.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/static/main/img/item/5.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/static/main/img/item/6.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/static/main/img/promo-banner.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/static/main/img/property-header-bg.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/static/main/img/property-view-2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/static/main/img/signin-bg.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/static/main/img/slider/1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/static/main/img/slider/2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/static/main/img/slider/3.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/static/main/img/slider/4.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/static/main/img/slider/5.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/static/main/img/slider/6.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/templates/main/contact.html" beforeDir="false" afterPath="$PROJECT_DIR$/main/templates/main/contact.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main/templates/main/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/main/templates/main/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/templates/main/properties-detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/main/templates/main/properties-detail.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/templates/main/properties.html" beforeDir="false" afterPath="$PROJECT_DIR$/main/templates/main/properties.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/main/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/main/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/staticfiles/admin/css/base.41c06691d585.css" beforeDir="false" afterPath="$PROJECT_DIR$/staticfiles/admin/css/base.41c06691d585.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/staticfiles/admin/css/forms.005170d00292.css" beforeDir="false" afterPath="$PROJECT_DIR$/staticfiles/admin/css/forms.005170d00292.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/staticfiles/main/css/slick.css" beforeDir="false" afterPath="$PROJECT_DIR$/staticfiles/main/css/slick.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/staticfiles/main/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/staticfiles/main/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/staticfiles/main/img/logo.png" beforeDir="false" afterPath="$PROJECT_DIR$/staticfiles/main/img/logo.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/templates/main/landowner.html" beforeDir="false" afterPath="$PROJECT_DIR$/main/templates/main/landowner.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/staticfiles/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/staticfiles/css/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -48,7 +19,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/main/static/main/css/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="175">
+            <state relative-caret-position="86850">
               <caret line="3474" selection-start-line="3474" selection-end-line="3474" />
             </state>
           </provider>
@@ -57,8 +28,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/main/templates/main/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1064">
-              <caret line="56" column="62" selection-start-line="55" selection-start-column="12" selection-end-line="56" selection-end-column="62" />
+            <state relative-caret-position="300">
+              <caret line="321" column="51" selection-start-line="321" selection-start-column="51" selection-end-line="321" selection-end-column="51" />
             </state>
           </provider>
         </entry>
@@ -66,7 +37,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/main/templates/main/properties-detail.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="50">
+            <state relative-caret-position="2375">
               <caret line="95" column="4" selection-start-line="95" selection-start-column="4" selection-end-line="97" selection-end-column="28" />
             </state>
           </provider>
@@ -75,13 +46,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/main/templates/main/landowner.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="250">
-              <caret line="213" column="79" selection-start-line="213" selection-start-column="79" selection-end-line="213" selection-end-column="79" />
-              <folding>
-                <element signature="e#4039#4080#0#HTML" expanded="true" />
-                <element signature="e#6993#7021#0#HTML" expanded="true" />
-                <element signature="e#6988#10036#0#HTML" />
-              </folding>
+            <state relative-caret-position="625">
+              <caret line="76" column="35" selection-start-line="76" selection-start-column="17" selection-end-line="76" selection-end-column="35" />
             </state>
           </provider>
         </entry>
@@ -89,44 +55,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/base.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="286">
-              <caret line="75" column="82" selection-start-line="75" selection-start-column="82" selection-end-line="75" selection-end-column="82" />
+            <state relative-caret-position="475">
+              <caret line="34" column="98" selection-start-line="34" selection-start-column="98" selection-end-line="34" selection-end-column="98" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/main/static/main/css/slick.css">
+        <entry file="file://$PROJECT_DIR$/staticfiles/css/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="145">
-              <caret line="128" column="13" selection-start-line="128" selection-start-column="13" selection-end-line="128" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/main/templates/main/properties.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="35" column="42" selection-start-line="35" selection-start-column="42" selection-end-line="35" selection-end-column="42" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/main/templates/main/contact.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="400">
-              <caret line="76" column="62" selection-start-line="76" selection-start-column="62" selection-end-line="76" selection-end-column="62" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/main/properties.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="100">
-              <caret line="4" column="44" selection-start-line="4" selection-start-column="44" selection-end-line="4" selection-end-column="44" />
+            <state relative-caret-position="-26492">
+              <caret line="703" column="25" selection-start-line="703" selection-start-column="25" selection-end-line="703" selection-end-column="25" />
             </state>
           </provider>
         </entry>
@@ -160,7 +99,6 @@
       <find>image</find>
       <find>content</find>
       <find>rgba</find>
-      <find>aa-property-header</find>
       <find>aa-menu-area</find>
       <find>tag</find>
       <find>fix</find>
@@ -177,10 +115,14 @@
       <find>aa-client-testimonial</find>
       <find>ajax</find>
       <find>slick.eot</find>
+      <find>aa-about-</find>
+      <find>aa-property-header</find>
+      <find>font-family</find>
     </findStrings>
     <replaceStrings>
       <replace>accs</replace>
       <replace>#314162</replace>
+      <replace>Roboto</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -212,14 +154,15 @@
         <option value="$PROJECT_DIR$/main/admin.py" />
         <option value="$PROJECT_DIR$/main/views.py" />
         <option value="$PROJECT_DIR$/main/urls.py" />
-        <option value="$PROJECT_DIR$/main/templates/main/index.html" />
         <option value="$PROJECT_DIR$/main/templates/main/properties-detail.html" />
         <option value="$PROJECT_DIR$/main/templates/main/properties.html" />
         <option value="$PROJECT_DIR$/main/templates/main/contact.html" />
         <option value="$PROJECT_DIR$/main/static/main/css/style.css" />
+        <option value="$PROJECT_DIR$/main/static/main/css/slick.css" />
+        <option value="$PROJECT_DIR$/main/templates/main/index.html" />
         <option value="$PROJECT_DIR$/main/templates/main/landowner.html" />
         <option value="$PROJECT_DIR$/templates/base.html" />
-        <option value="$PROJECT_DIR$/main/static/main/css/slick.css" />
+        <option value="$PROJECT_DIR$/staticfiles/css/style.css" />
       </list>
     </option>
   </component>
@@ -248,50 +191,13 @@
             <path>
               <item name="property" type="b2602c69:ProjectViewProjectNode" />
               <item name="property" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="staticfiles" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="property" type="b2602c69:ProjectViewProjectNode" />
               <item name="property" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="property" type="b2602c69:ProjectViewProjectNode" />
-              <item name="property" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="property" type="b2602c69:ProjectViewProjectNode" />
-              <item name="property" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="fonts" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="property" type="b2602c69:ProjectViewProjectNode" />
-              <item name="property" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="img" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="property" type="b2602c69:ProjectViewProjectNode" />
-              <item name="property" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="img" type="462c0819:PsiDirectoryNode" />
-              <item name="slider" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="property" type="b2602c69:ProjectViewProjectNode" />
-              <item name="property" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
+              <item name="staticfiles" type="462c0819:PsiDirectoryNode" />
+              <item name="css" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -377,18 +283,19 @@
       <workItem from="1561888672070" duration="98000" />
       <workItem from="1561892887570" duration="13757000" />
       <workItem from="1561912334345" duration="1405000" />
-      <workItem from="1562202027332" duration="8663000" />
+      <workItem from="1562202027332" duration="8814000" />
+      <workItem from="1562685058971" duration="2302000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="54552000" />
+    <option name="totallyTimeSpent" value="57005000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="784" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.27609682" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.15885022" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -402,7 +309,7 @@
       <window_info anchor="bottom" id="Version Control" order="8" weight="0.32872504" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" weight="0.32872504" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="11" visible="true" weight="0.33333334" />
+      <window_info anchor="bottom" id="Terminal" order="11" weight="0.33333334" />
       <window_info anchor="bottom" id="Python Console" order="12" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -411,7 +318,7 @@
       <window_info anchor="right" id="Database" order="4" />
     </layout>
     <layout-to-restore>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.27609682" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.15885022" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -424,8 +331,8 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" weight="0.32872504" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
-      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" visible="true" weight="0.32872504" />
-      <window_info anchor="bottom" id="Terminal" order="11" weight="0.33333334" />
+      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" weight="0.32872504" />
+      <window_info anchor="bottom" id="Terminal" order="11" visible="true" weight="0.33333334" />
       <window_info anchor="bottom" id="Python Console" order="12" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -471,13 +378,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="7775">
           <caret line="311" column="14" selection-start-line="311" selection-start-column="14" selection-end-line="311" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/staticfiles/css/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="28432">
-          <caret line="2446" column="18" lean-forward="true" selection-start-line="2446" selection-start-column="18" selection-end-line="2446" selection-end-column="18" />
         </state>
       </provider>
     </entry>
@@ -622,23 +522,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/main/properties.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
-          <caret line="4" column="44" selection-start-line="4" selection-start-column="44" selection-end-line="4" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/accs/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1875">
-          <caret line="91" column="31" selection-start-line="91" selection-start-column="31" selection-end-line="91" selection-end-column="31" />
-          <folding>
-            <element signature="e#0#67#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/main/views.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="161">
@@ -656,57 +539,48 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/main/templates/main/contact.html">
+    <entry file="file://$PROJECT_DIR$/main/static/main/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="400">
-          <caret line="76" column="62" selection-start-line="76" selection-start-column="62" selection-end-line="76" selection-end-column="62" />
+        <state relative-caret-position="86850">
+          <caret line="3474" selection-start-line="3474" selection-end-line="3474" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/main/templates/main/properties-detail.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="50">
+        <state relative-caret-position="2375">
           <caret line="95" column="4" selection-start-line="95" selection-start-column="4" selection-end-line="97" selection-end-column="28" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/main/templates/main/properties.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
+        <state relative-caret-position="875">
           <caret line="35" column="42" selection-start-line="35" selection-start-column="42" selection-end-line="35" selection-end-column="42" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/main/templates/main/index.html">
+    <entry file="file://$PROJECT_DIR$/main/templates/main/contact.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1064">
-          <caret line="56" column="62" selection-start-line="55" selection-start-column="12" selection-end-line="56" selection-end-column="62" />
+        <state relative-caret-position="1900">
+          <caret line="76" column="62" selection-start-line="76" selection-start-column="62" selection-end-line="76" selection-end-column="62" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/main/static/main/css/style.css">
+    <entry file="file://$PROJECT_DIR$/main/properties.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="175">
-          <caret line="3474" selection-start-line="3474" selection-end-line="3474" />
+        <state relative-caret-position="100">
+          <caret line="4" column="44" selection-start-line="4" selection-start-column="44" selection-end-line="4" selection-end-column="44" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/main/templates/main/landowner.html">
+    <entry file="file://$PROJECT_DIR$/accs/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="250">
-          <caret line="213" column="79" selection-start-line="213" selection-start-column="79" selection-end-line="213" selection-end-column="79" />
+        <state relative-caret-position="1875">
+          <caret line="91" column="31" selection-start-line="91" selection-start-column="31" selection-end-line="91" selection-end-column="31" />
           <folding>
-            <element signature="e#4039#4080#0#HTML" expanded="true" />
-            <element signature="e#6993#7021#0#HTML" expanded="true" />
-            <element signature="e#6988#10036#0#HTML" />
+            <element signature="e#0#67#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/base.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
-          <caret line="75" column="82" selection-start-line="75" selection-start-column="82" selection-end-line="75" selection-end-column="82" />
         </state>
       </provider>
     </entry>
@@ -714,6 +588,37 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="145">
           <caret line="128" column="13" selection-start-line="128" selection-start-column="13" selection-end-line="128" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main/templates/main/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="321" column="51" selection-start-line="321" selection-start-column="51" selection-end-line="321" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main/templates/main/landowner.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="625">
+          <caret line="76" column="35" selection-start-line="76" selection-start-column="17" selection-end-line="76" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/staticfiles/css/theme-color/default-theme.css">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/base.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="475">
+          <caret line="34" column="98" selection-start-line="34" selection-start-column="98" selection-end-line="34" selection-end-column="98" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/staticfiles/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-26492">
+          <caret line="703" column="25" selection-start-line="703" selection-start-column="25" selection-end-line="703" selection-end-column="25" />
         </state>
       </provider>
     </entry>
