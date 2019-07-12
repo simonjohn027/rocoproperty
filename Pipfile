@@ -13,6 +13,7 @@ whitenoise = "*"
 psycopg2 = "*"
 social-auth-app-django = "*"
 pillow = "*"
+djangorestframework = "*"
 
 [requires]
 python_version = "3.7"

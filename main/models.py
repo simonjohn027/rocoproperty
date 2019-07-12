@@ -3,11 +3,12 @@ from django.db.models.signals import pre_save
 from django.utils.text import slugify
 from django.urls import  reverse
 from .properties import houses,lease,rooms
+from property import  settings
 
 
 
 class Property(models.Model):
-    owner = models.CharField(max_length= 2000)
+    owner = models.ForeignKey(settings.AUTH_USER_MODEL,related_name='property',on_delete=models.DO_NOTHING)
     location = models.CharField(max_length= 255, verbose_name="Location",blank= False)
     type = models.CharField(choices= houses,max_length= 25, verbose_name="Type of Property")
     latitude = models.IntegerField()
@@ -56,7 +57,7 @@ class Room(models.Model):
         ordering = ['room_size']
 
     def __str__(self):
-        return '%s - %s ' % (self.property, self.room_type)
+        return '%s:%s ' % (self.room_type, self.total)
 
 class Image(models.Model):
     property = models.ForeignKey(Property,on_delete= models.CASCADE,related_name='images')
@@ -70,8 +71,11 @@ class Image(models.Model):
         return '%s - %s ' % (self.property, self.file)
 
 class Price(models.Model):
-    property = models.ForeignKey(Property,on_delete=models.CASCADE)
+    property = models.ForeignKey(Property,on_delete=models.CASCADE,related_name='price')
     lease = models.CharField(max_length=25, choices=lease,verbose_name="Lease Type")
     price = models.IntegerField(verbose_name="Lease Price")
+
+    def __str__(self):
+        return '%s : %s ' % (self.lease, self.price)
 
 

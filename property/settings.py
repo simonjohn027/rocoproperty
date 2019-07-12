@@ -72,9 +72,12 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'serializerapp.apps.SerializerappConfig',
     'main.apps.MainConfig',
     'accs.apps.AccsConfig',
     'social_django',
+    'rest_framework',
+
 ]
 
 MIDDLEWARE = [
