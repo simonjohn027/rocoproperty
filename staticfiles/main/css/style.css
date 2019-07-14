@@ -1338,7 +1338,7 @@ img {
 ====================*/
 
 #aa-property-header {
-    background-image: url("../img/banner.jpg");
+   background-image: url("../img/banner.jpg");*
   background-attachment: fixed;
   background-position: center center;
   background-size: cover;
@@ -1390,7 +1390,7 @@ img {
   display: inline;
   float: left;
   width: 100%;
-  padding: 30px 0 100px;
+  padding: 30px 0 30px;
 }
 #aa-properties .aa-properties-content {
   display: inline;
@@ -3538,4 +3538,11 @@ services
 }
 .icon-info p{
 	font-size: 15px !important;
+}
+
+
+.leaseside{
+  border: 1px solid black;
+  border-radius: 5px;
+  padding: 5%;
 }
