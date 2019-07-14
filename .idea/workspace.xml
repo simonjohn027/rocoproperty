@@ -1,31 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9cc97fa5-dec5-4e73-9bed-89bdeced4506" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/customer/static/customer/css/dashboard.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/customer/static/customer/js/dashboard.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/customer/templates/customer/dashboard.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/customer/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/accs/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/accs/forms.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/accs/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/accs/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/accs/templates/accs/register.html" beforeDir="false" afterPath="$PROJECT_DIR$/accs/templates/accs/register.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/accs/templates/accs/signin.html" beforeDir="false" afterPath="$PROJECT_DIR$/accs/templates/accs/signin.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/accs/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/accs/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/accs/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/accs/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/static/main/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/main/static/main/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/static/main/css/theme-color/default-theme.css" beforeDir="false" afterPath="$PROJECT_DIR$/main/static/main/css/theme-color/default-theme.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/templates/main/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/main/templates/main/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/templates/main/landowner.html" beforeDir="false" afterPath="$PROJECT_DIR$/main/templates/main/landowner.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/templates/main/properties-detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/main/templates/main/property.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/templates/main/properties.html" beforeDir="false" afterPath="$PROJECT_DIR$/main/templates/main/properties.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/main/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/main/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/property/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/property/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/property/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/property/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/registration/emails/verify.txt" beforeDir="false" afterPath="$PROJECT_DIR$/templates/registration/emails/verify.txt" afterDir="false" />
-    </list>
+    <list default="true" id="9cc97fa5-dec5-4e73-9bed-89bdeced4506" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -70,19 +46,19 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/accs/templates/accs/register.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="12" column="7" lean-forward="true" selection-start-line="12" selection-start-column="7" selection-end-line="12" selection-end-column="7" />
+            <state relative-caret-position="336">
+              <caret line="19" column="14" lean-forward="true" selection-start-line="19" selection-start-column="14" selection-end-line="19" selection-end-column="14" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/accs/templates/accs/signin.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="475">
+            <state relative-caret-position="361">
               <caret line="21" column="18" lean-forward="true" selection-end-line="24" selection-end-column="14" />
             </state>
           </provider>
@@ -374,12 +350,12 @@
       <workItem from="1562685058971" duration="4101000" />
       <workItem from="1562856119536" duration="6108000" />
       <workItem from="1562914144709" duration="39570000" />
-      <workItem from="1563089693831" duration="8283000" />
+      <workItem from="1563089693831" duration="8573000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="112765000" />
+    <option name="totallyTimeSpent" value="113055000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -392,9 +368,8 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="784" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2980333" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2980333" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -408,7 +383,7 @@
       <window_info anchor="bottom" id="Version Control" order="8" weight="0.32872504" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50075644" side_tool="true" weight="0.32872504" />
-      <window_info anchor="bottom" id="Terminal" order="11" weight="0.35176653" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="11" visible="true" weight="0.35176653" />
       <window_info anchor="bottom" id="Python Console" order="12" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -796,17 +771,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/accs/templates/accs/signin.html">
+    <entry file="file://$PROJECT_DIR$/accs/templates/accs/register.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="475">
-          <caret line="21" column="18" lean-forward="true" selection-end-line="24" selection-end-column="14" />
+        <state relative-caret-position="336">
+          <caret line="19" column="14" lean-forward="true" selection-start-line="19" selection-start-column="14" selection-end-line="19" selection-end-column="14" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/accs/templates/accs/register.html">
+    <entry file="file://$PROJECT_DIR$/accs/templates/accs/signin.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="12" column="7" lean-forward="true" selection-start-line="12" selection-start-column="7" selection-end-line="12" selection-end-column="7" />
+        <state relative-caret-position="361">
+          <caret line="21" column="18" lean-forward="true" selection-end-line="24" selection-end-column="14" />
         </state>
       </provider>
     </entry>
