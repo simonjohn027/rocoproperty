@@ -1,6 +1,6 @@
  {% extends 'base.html' %}
  {%load staticfiles %}
- {% block staticfiles %}
+ {% block costume_css %}
   <style>
      #aa-menu-area {
             left: 0;
@@ -41,14 +41,14 @@
           <!-- Text based logo -->
            <!-- <a class="navbar-brand aa-logo" href="index.html"> Home <span>Property</span></a>-->
            <!-- Image based logo -->
-           <a class="navbar-brand aa-logo-img" href="{% url "index" %}"><img src="{% static "main/img/logo.png" %}" alt="logo"></a>
+           <a class="navbar-brand aa-logo-img" href="{% url "main:index" %}"><img src="{% static "main/img/logo.png" %}" alt="logo"></a>
         </div>
         <div id="navbar" class="navbar-collapse collapse">
           <ul id="top-menu" class="nav navbar-nav navbar-right aa-main-nav">
-              <li><a href="{% url "index" %}"><i data-feather="home"></i></a></li>
-            <li class="active"><a href="{% url "list" %}">Browse Homes</a></li>
-            <li><a href="{% url "owner" %}">Land Owners</a></li>
-            <li><a href="{% url 'contact' %}">CONTACT</a></li>
+              <li><a href="{% url "main:index" %}"><i data-feather="home"></i></a></li>
+            <li class="active"><a href="{% url "main:list" %}">Browse Homes</a></li>
+            <li><a href="{% url "main:owner" %}">Land Owners</a></li>
+            <li><a href="{% url 'main:contact' %}">CONTACT</a></li>
               <li><a href="contact.html">Login</a></li>
            <li><a href="404.html">Register</a></li>
           </ul>
@@ -93,7 +93,7 @@
               <ul class="aa-properties-nav">
                   <li>
                   <article class="aa-properties-item">
-                    <a class="aa-properties-item-img" href="{% url 'property' %}">
+                    <a class="aa-properties-item-img" href="{% url 'main:property' %}">
                       <img alt="img" src="{% static "main/img/houses/Kitchen.jpg" %}">
                     </a>
                     <div class="aa-tag sold-out">
@@ -114,7 +114,7 @@
                         <span class="aa-price">
                           $35000
                         </span>
-                        <a class="aa-secondary-btn" href="{% url 'property' %}">View Details</a>
+                        <a class="aa-secondary-btn" href="{% url 'main:property' %}">View Details</a>
                       </div>
                     </div>
                   </article>
@@ -149,7 +149,7 @@
                 </li>
                 <li>
                   <article class="aa-properties-item">
-                    <a class="aa-properties-item-img" href="{% url 'property' %}">
+                    <a class="aa-properties-item-img" href="{% url 'main:property' %}">
                       <img alt="img" src="{% static "main/img/houses/Kitchen.jpg" %}">
                     </a>
                     <div class="aa-tag sold-out">
@@ -170,7 +170,7 @@
                         <span class="aa-price">
                           $35000
                         </span>
-                        <a class="aa-secondary-btn" href="{% url 'property' %}">View Details</a>
+                        <a class="aa-secondary-btn" href="{% url 'main:property' %}">View Details</a>
                       </div>
                     </div>
                   </article>
@@ -255,3 +255,74 @@
 
   <!-- / Properties  -->
  {% endblock %}
+
+{% block costume_js %}
+   <script>
+   function initMap() {
+  var broadway = {
+    info:
+      '<strong>Chipotle on Broadway</strong><br>\
+    	5224 N Broadway St<br> Accra, IL 60640<br>\
+    	<a href="https://goo.gl/maps/jKNEDz4SyyH2">Get Directions</a>',
+    lat: 5.620076,
+    long: -0.143358,
+  }
+
+  var belmont = {
+    info:
+      '<strong>Chipotle on Belmont</strong><br>\
+    	1025 W Belmont Ave<br> Accra, IL 60657<br>\
+    	<a href="https://goo.gl/maps/PHfsWTvgKa92">Get Directions</a>',
+    lat: 5.552209,
+    long:   -0.244004,
+  }
+
+  var sheridan = {
+    info:
+      '<strong>Chipotle on Sheridan</strong><br>\r\
+    	6600 N Sheridan Rd<br> Accra, IL 60626<br>\
+    	<a href="https://goo.gl/maps/QGUrqZPsYp92">Get Directions</a>',
+    lat: 5.583545,
+    long: -0.192242,
+  }
+
+  var locations = [
+    [broadway.info, broadway.lat, broadway.long, 0],
+    [belmont.info, belmont.lat, belmont.long, 1],
+    [sheridan.info, sheridan.lat, sheridan.long, 2],
+  ]
+
+  var map = new google.maps.Map(document.getElementById('map'), {
+    zoom: 10,
+    center: new google.maps.LatLng(5.584551, -0.194409),
+    mapTypeId: google.maps.MapTypeId.ROADMAP,
+  })
+
+  var infowindow = new google.maps.InfoWindow({})
+
+  var marker, i
+
+  for (i = 0; i < locations.length; i++) {
+    marker = new google.maps.Marker({
+      position: new google.maps.LatLng(locations[i][1], locations[i][2]),
+      map: map,
+    })
+
+    google.maps.event.addListener(
+      marker,
+      'click',
+      (function(marker, i) {
+        return function() {
+          infowindow.setContent(locations[i][0])
+          infowindow.open(map, marker)
+        }
+      })(marker, i)
+    )
+  }
+}
+</script>
+
+<script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCBi9x35Ba1MhGoo9sfiiPoKPV9WuWbW28&callback=initMap">
+</script>
+{% endblock %}

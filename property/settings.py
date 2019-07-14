@@ -73,8 +73,10 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'serializerapp.apps.SerializerappConfig',
-    'main.apps.MainConfig',
     'accs.apps.AccsConfig',
+    'customer.apps.CustomerConfig',
+    'main.apps.MainConfig',
+
     'social_django',
     'rest_framework',
 

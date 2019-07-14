@@ -3,7 +3,7 @@ Hello,
 Please activate your account for {{ email }} by clicking the link below:
 
 
-<a href ='{{ path }}'>ACTIVATE</a>
+<a href ="{{ path }}">ACTIVATE</a>
 
 
 

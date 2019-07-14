@@ -185,7 +185,7 @@ class EmailActivation(models.Model):
                 }
                 txt_ = get_template("registration/emails/verify.txt").render(context)
                 html_ = get_template("registration/emails/verify.html").render(context)
-                subject = 'SVP - EMAIL VERIFICATION'
+                subject = 'Property233 - EMAIL VERIFICATION'
                 from_email = settings.DEFAULT_FROM_EMAIL
                 recipient_list = [self.email]
                 sent_mail = send_mail(

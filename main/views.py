@@ -7,7 +7,7 @@ def propertyList(request):
     return  render(request, 'main/properties.html')
 
 def property(request):
-    return  render(request, 'main/properties-detail.html')
+    return  render(request, 'main/property.html')
 
 def owners(request):
     return  render(request, 'main/landowner.html')

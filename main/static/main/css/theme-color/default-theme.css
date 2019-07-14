@@ -41,7 +41,7 @@ h2 {
   color: #314162;
 }
 #aa-menu-area .main-navbar .navbar-nav li a:hover, #aa-menu-area .main-navbar .navbar-nav li a:focus {
-  color: #314162;
+  /*color: #fbfffd;*/
 }
 #aa-menu-area .main-navbar .navbar-nav .active a {
   color: #314162;

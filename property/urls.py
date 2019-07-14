@@ -8,9 +8,9 @@ urlpatterns = [
     path("", include('main.urls')),
     path("accs/", include("accs.urls")),
     path('api/',include('serializerapp.urls')),
+    path('customer/',include('customer.urls')),
 
     path('login/', auth_views.auth_login, name='login'),
-    path('logout/', auth_views.auth_logout, name='logout'),
     path('oauth/', include('social_django.urls', namespace='social')),
 
     path('api-auth/', include('rest_framework.urls')),

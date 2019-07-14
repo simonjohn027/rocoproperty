@@ -16,7 +16,7 @@
 
 
     <!-- Bootstrap -->
-    <link href="{% static "main/css/bootstrap.css" %}" rel="stylesheet">
+    <link href="{% static 'main/css/bootstrap.css' %}" rel="stylesheet" >
     <!-- slick slider -->
     <link rel="stylesheet" type="text/css" href="{% static "main/css/slick.css" %}">
     <!-- price picker slider -->
@@ -25,10 +25,13 @@
     <link rel="stylesheet" href="{% static "main/css/jquery.fancybox.css" %}" type="text/css" media="screen"/>
     <!-- Theme color -->
     <link id="switcher" href="{% static "main/css/theme-color/default-theme.css" %}" rel="stylesheet">
-
+    <!--Perfect Scroll bar-->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/jquery.perfect-scrollbar/1.4.0/css/perfect-scrollbar.min.css" rel="stylesheet">
+    <!--Swiper Slider -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/css/swiper.min.css">
     <!-- Main style sheet -->
     <link href="{% static "main/css/style.css" %}" rel="stylesheet">
-    {% block staticfiles %}{% endblock %}
+    {% block costume_css %}{% endblock %}
     <!-- Google Font -->
     <link href='https://fonts.googleapis.com/css?family=Vollkorn' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
@@ -79,10 +82,10 @@
                         </div>
                         <div class="col-md-6 col-sm-12 col-xs-12">
                             <div class="aa-footer-right">
-                                <a href="{% url "index" %}">Home</a>
-                                <a href="{% url "list" %}">Properties</a>
-                                <a href="{% url "contact" %}">Support</a>
-                                <a href="{% url "owner" %}">Partner</a>
+                                <a href="{% url "main:index" %}">Home</a>
+                                <a href="{% url "main:list" %}">Properties</a>
+                                <a href="{% url "main:contact" %}">Support</a>
+                                <a href="{% url "main:owner" %}">Partner</a>
                                 <a href="">Privacy & Term</a>
                             </div>
                         </div>
@@ -98,74 +101,7 @@
   feather.replace()
 </script>
 <!-- / Footer -->
-<script>
-   function initMap() {
-  var broadway = {
-    info:
-      '<strong>Chipotle on Broadway</strong><br>\
-    	5224 N Broadway St<br> Accra, IL 60640<br>\
-    	<a href="https://goo.gl/maps/jKNEDz4SyyH2">Get Directions</a>',
-    lat: 5.620076,
-    long: -0.143358,
-  }
 
-  var belmont = {
-    info:
-      '<strong>Chipotle on Belmont</strong><br>\
-    	1025 W Belmont Ave<br> Accra, IL 60657<br>\
-    	<a href="https://goo.gl/maps/PHfsWTvgKa92">Get Directions</a>',
-    lat: 5.552209,
-    long:   -0.244004,
-  }
-
-  var sheridan = {
-    info:
-      '<strong>Chipotle on Sheridan</strong><br>\r\
-    	6600 N Sheridan Rd<br> Accra, IL 60626<br>\
-    	<a href="https://goo.gl/maps/QGUrqZPsYp92">Get Directions</a>',
-    lat: 5.583545,
-    long: -0.192242,
-  }
-
-  var locations = [
-    [broadway.info, broadway.lat, broadway.long, 0],
-    [belmont.info, belmont.lat, belmont.long, 1],
-    [sheridan.info, sheridan.lat, sheridan.long, 2],
-  ]
-
-  var map = new google.maps.Map(document.getElementById('map'), {
-    zoom: 10,
-    center: new google.maps.LatLng(5.584551, -0.194409),
-    mapTypeId: google.maps.MapTypeId.ROADMAP,
-  })
-
-  var infowindow = new google.maps.InfoWindow({})
-
-  var marker, i
-
-  for (i = 0; i < locations.length; i++) {
-    marker = new google.maps.Marker({
-      position: new google.maps.LatLng(locations[i][1], locations[i][2]),
-      map: map,
-    })
-
-    google.maps.event.addListener(
-      marker,
-      'click',
-      (function(marker, i) {
-        return function() {
-          infowindow.setContent(locations[i][0])
-          infowindow.open(map, marker)
-        }
-      })(marker, i)
-    )
-  }
-}
-</script>
-
-<script async defer
-        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCBi9x35Ba1MhGoo9sfiiPoKPV9WuWbW28&callback=initMap">
-</script>
 
 <!-- jQuery library -->
 <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script> -->
@@ -180,8 +116,14 @@
 <script type="text/javascript" src="{% static "main/js/jquery.mixitup.js" %}"></script>
 <!-- Add fancyBox -->
 <script type="text/javascript" src="{% static "main/js/jquery.fancybox.pack.js" %}"></script>
+<!--Swiper Slider-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/js/swiper.min.js"></script>
+<!--Perfect Scrollbar-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.perfect-scrollbar/1.4.0/perfect-scrollbar.min.js"></script>
 <!-- Custom js -->
 <script src="{% static "main/js/custom.js" %}"></script>
+{% block costume_js%}
+{% endblock %}
 
 </body>
 
