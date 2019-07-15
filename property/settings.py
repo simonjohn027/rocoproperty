@@ -33,11 +33,11 @@ EMAIL_HOST_USER = 'apikey' # sendgrid
 EMAIL_HOST_PASSWORD = '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'
 EMAIL_PORT = 587
 EMAIL_USE_TLS = True
-DEFAULT_FROM_EMAIL = 'SIMON JOHN <officespire01@gmail.com>'
+DEFAULT_FROM_EMAIL = 'Propert233 <hello@property233.co>'
 BASE_URL = 'property233.herokuapp.com'
 
 MANAGERS = (
-    ('SIMON JOHN', "officespire01@gmail.com"),
+    ('Property233', "hello@property233.co"),
 )
 
 ADMINS = MANAGERS
