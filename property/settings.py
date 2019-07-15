@@ -34,7 +34,7 @@ EMAIL_HOST_PASSWORD = 'SG.6HItAQ8XSkCJZEn9tNAK5Q.bMnSiv-SzMGV6rZEMM00d1v-SZTi-hb
 EMAIL_PORT = 587
 EMAIL_USE_TLS = True
 DEFAULT_FROM_EMAIL = 'SIMON JOHN <officespire01@gmail.com>'
-BASE_URL = '127.0.0.1:8000'
+BASE_URL = 'property233.herokuapp.com'
 
 MANAGERS = (
     ('SIMON JOHN', "officespire01@gmail.com"),

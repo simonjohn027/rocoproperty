@@ -176,7 +176,7 @@ class EmailActivation(models.Model):
     def send_activation(self):
         if not self.activated and not self.forced_expired:
             if self.key:
-                base_url = getattr(settings, 'BASE_URL', 'https://www.pythonecommerce.com')
+                base_url = getattr(settings, 'BASE_URL', 'https.property233.herokuapp.com')
                 key_path = reverse("accs:email-activate", kwargs={'key': self.key})  # use reverse
                 path = "{base}{path}".format(base=base_url, path=key_path)
                 context = {
