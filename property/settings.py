@@ -28,9 +28,9 @@ DEBUG = True
 ALLOWED_HOSTS = ['property233.herokuapp.com','127.0.0.1','localhost']
 
 
-EMAIL_HOST = 'smtp.gmail.com'
-EMAIL_HOST_USER = 'officespire01@gmail.com' # sendgrid
-EMAIL_HOST_PASSWORD = os.environ.get('EMAIL_HOST_PASSWORD', 'Money 2018*')
+EMAIL_HOST = 'smtp.sendgrid.com'
+EMAIL_HOST_USER = 'apikey' # sendgrid
+EMAIL_HOST_PASSWORD = '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'
 EMAIL_PORT = 587
 EMAIL_USE_TLS = True
 DEFAULT_FROM_EMAIL = 'SIMON JOHN <officespire01@gmail.com>'

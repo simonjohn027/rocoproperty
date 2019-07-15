@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9cc97fa5-dec5-4e73-9bed-89bdeced4506" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/property/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/property/settings.py" afterDir="false" />
-    </list>
+    <list default="true" id="9cc97fa5-dec5-4e73-9bed-89bdeced4506" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,7 +56,7 @@
         <entry file="file://$PROJECT_DIR$/property/settings.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="225">
-              <caret line="27" column="18" selection-start-line="27" selection-start-column="18" selection-end-line="27" selection-end-column="18" />
+              <caret line="30" column="24" selection-start-line="30" selection-start-column="19" selection-end-line="30" selection-end-column="24" />
             </state>
           </provider>
         </entry>
@@ -334,12 +331,12 @@
       <workItem from="1562856119536" duration="6108000" />
       <workItem from="1562914144709" duration="39570000" />
       <workItem from="1563089693831" duration="8573000" />
-      <workItem from="1563175369800" duration="13725000" />
+      <workItem from="1563175369800" duration="14326000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="127623000" />
+    <option name="totallyTimeSpent" value="128224000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -771,7 +768,7 @@
     <entry file="file://$PROJECT_DIR$/property/settings.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="225">
-          <caret line="27" column="18" selection-start-line="27" selection-start-column="18" selection-end-line="27" selection-end-column="18" />
+          <caret line="30" column="24" selection-start-line="30" selection-start-column="19" selection-end-line="30" selection-end-column="24" />
         </state>
       </provider>
     </entry>
