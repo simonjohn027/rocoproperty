@@ -58,7 +58,7 @@ class Contact(FormMixin,View):
         message = form.cleaned_data.get('message')
         if name and message and from_email:
             try:
-                send_mail(subject=subject,message = message,from_email= from_email,recipient_list= ['officespire01@gmail.com','hello@property233.co'],auth_user=name)
+                send_mail(subject=subject,message = message,from_email= from_email,recipient_list= ['officespire01@gmail.com'],auth_user=name)
             except BadHeaderError:
                 return HttpResponse('Invalid header found.')
             return super(Contact,self).form_valid(form)
