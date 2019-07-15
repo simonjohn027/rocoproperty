@@ -74,8 +74,16 @@
                         <li class="active"><a href="{% url "main:list" %}">Browse Homes</a></li>
                         <li><a href="{% url "main:list" %}">Land Owners</a></li>
                         <li><a href="{% url 'main:contact' %}">CONTACT</a></li>
-                        <li><a href="contact.html">Login</a></li>
-                        <li><a href="404.html">Register</a></li>
+                         {% if not user.is_authenticated %}
+                   <li><a href="{% url 'accs:registration' %}" class="aa-register">Register</a></li>
+                   <li> <a href="{% url 'accs:login'%}" class="aa-login">Login</a></li>
+                    {% else %} {% if user.is_staff %}
+                   <li> <a href="{% url 'admin:index' %}" class="aa-register">Dashboard</a></li>
+                   <li><a href="{% url 'accs:logout'%}" class="aa-login">LogOut</a></li>
+                        {% else %}
+                   <li><a href="{% url 'customer:dashboard' %}" class="aa-register">Dashboard</a></li>
+                   <li><a href="{% url 'accs:logout'%}" class="aa-login">LogOut</a></li>
+                   {% endif %} {% endif %}
                     </ul>
                 </div><!--/.nav-collapse -->
             </div>

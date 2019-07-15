@@ -17,6 +17,7 @@ class Property(models.Model):
     room_number = models.IntegerField(verbose_name="Total Number of Rooms")
     availability = models.DateField(verbose_name="Available From")
     slug = models.SlugField(unique= True, max_length=20,blank=True)
+    shared = models.BooleanField()
     created_on = models.DateTimeField(auto_now_add=True)
 
     def __str__(self):

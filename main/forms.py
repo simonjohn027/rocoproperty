@@ -5,7 +5,7 @@ class PropertyForm(forms.ModelForm):
     class Meta:
         model = Property
         fields = ('owner', 'location','type','latitude',
-                  'longitude','area','room_number','slug','availability')
+                  'longitude','area','room_number','shared','slug','availability')
 
 
 
