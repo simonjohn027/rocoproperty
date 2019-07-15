@@ -8,5 +8,5 @@ urlpatterns = [
     path("props",views.propertyList, name = "list"),
     path("prop",views.property, name = "property"),
     path("owner",views.owners, name = "owner"),
-    path("contact",views.contact, name = "contact")
+    path("contact",views.Contact.as_view(), name = "contact")
 ]
