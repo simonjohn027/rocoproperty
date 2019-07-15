@@ -25,7 +25,7 @@ SECRET_KEY = '38#nr$pi51zd#3f3b@4$uc%_3fyn8j#$d$eigxs)1(n1+uld#8'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['rocoproperty.herokuapp.com','127.0.0.1','localhost']
+ALLOWED_HOSTS = ['property233.herokuapp.com','127.0.0.1','localhost']
 
 
 EMAIL_HOST = 'smtp.gmail.com'
