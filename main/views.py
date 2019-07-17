@@ -1,10 +1,12 @@
 from django.shortcuts import render
-from django.views.generic import View
+from django.views.generic import View,ListView
 from django.views.generic.edit import FormMixin
 from .forms import ContactForm
 from django.contrib import  messages
 from django.core.mail import BadHeaderError, send_mail
 from django.http import HttpResponse, HttpResponseRedirect
+from django.db.models import Q
+from .models import  Property
 
 
 def index(request):
@@ -18,6 +20,17 @@ def property(request):
 
 def owners(request):
     return  render(request, 'main/landowner.html')
+
+class SearchResultsView(ListView):
+    model = Property
+    template_name = 'main/placeholder.html'
+
+    def get_queryset(self): # new
+        query = self.request.GET.get('q')
+        object_list = Property.objects.filter(
+            Q(location__icontains=query) | Q(state__icontains=query)
+        )
+        return object_list
 
 def contact(request):
     return  render(request, 'main/contact.html')
@@ -58,7 +71,7 @@ class Contact(FormMixin,View):
         message = form.cleaned_data.get('message')
         if name and message and from_email:
             try:
-                send_mail(subject=subject,message = message,from_email= from_email,recipient_list= ['officespire01@gmail.com'])
+                send_mail(subject=subject,message = message,from_email= from_email,recipient_list= ['hello@property233.co','officespire01@gmail.com'])
             except BadHeaderError:
                 return HttpResponse('Invalid header found.')
             return super(Contact,self).form_valid(form)

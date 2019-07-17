@@ -46,18 +46,18 @@
         <div id="navbar" class="navbar-collapse collapse">
           <ul id="top-menu" class="nav navbar-nav navbar-right aa-main-nav">
               <li><a href="{% url "main:index" %}"><i data-feather="home"></i></a></li>
-            <li class="active"><a href="{% url "main:list" %}">Browse Homes</a></li>
-            <li><a href="{% url "main:owner" %}">Land Owners</a></li>
-            <li><a href="{% url 'main:contact' %}">CONTACT</a></li>
+            <li class="active"><a href="{% url "main:list" %}">Find a Home</a></li>
+            <li><a href="{% url "main:owner" %}">House Owners</a></li>
+            <li><a href="{% url 'main:contact' %}">Contact</a></li>
                {% if not user.is_authenticated %}
                    <li><a href="{% url 'accs:registration' %}" class="aa-register">Register</a></li>
                    <li> <a href="{% url 'accs:login'%}" class="aa-login">Login</a></li>
                     {% else %} {% if user.is_staff %}
                    <li> <a href="{% url 'admin:index' %}" class="aa-register">Dashboard</a></li>
-                   <li><a href="{% url 'accs:logout'%}" class="aa-login">LogOut</a></li>
+                   <li><a href="{% url 'accs:logout'%}" class="aa-login">Logout</a></li>
                         {% else %}
                    <li><a href="{% url 'customer:dashboard' %}" class="aa-register">Dashboard</a></li>
-                   <li><a href="{% url 'accs:logout'%}" class="aa-login">LogOut</a></li>
+                   <li><a href="{% url 'accs:logout'%}" class="aa-login">Logout</a></li>
                    {% endif %} {% endif %}
           </ul>
         </div><!--/.nav-collapse -->
@@ -76,20 +76,12 @@
                 <form action="" class="aa-sort-form">
                   <label for="">Sort by</label>
                   <select name="">
-                    <option value="1" selected="Default">Default</option>
-                    <option value="2">Name</option>
-                    <option value="3">Price</option>
-                    <option value="4">Date</option>
+                    <option value="1" selected="Type">Bedrooms</option>
+                    <option value="2">Price</option>
+                    <option value="3">Location</option>
                   </select>
                 </form>
-                <form action="" class="aa-show-form">
-                  <label for="">Show</label>
-                  <select name="">
-                    <option value="1" selected="12">6</option>
-                    <option value="2">12</option>
-                    <option value="3">24</option>
-                  </select>
-                </form>
+
               </div>
               <div class="aa-properties-content-head-right">
                 <a id="aa-grid-properties" href="#"><span class="fa fa-th"></span></a>

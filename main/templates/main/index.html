@@ -12,7 +12,7 @@
                 <div class="aa-header-left">
                   <div class="aa-telephone-no">
                     <span class="fa fa-phone"></span>
-                    1-900-523-3564
+                     233 (0) 20 477 8022
                   </div>
                   <div class="aa-email hidden-xs">
                     <span class="fa fa-envelope-o"></span> hello@property233.co
@@ -60,9 +60,9 @@
         </div>
         <div id="navbar" class="navbar-collapse collapse">
           <ul id="top-menu" class="nav navbar-nav navbar-right aa-main-nav">
-            <li><a href="{% url 'main:list' %}">Browse Homes</a></li>
-            <li><a href="{% url "main:owner" %}">Land Owners</a></li>
-            <li><a href="{% url 'main:contact' %}">CONTACT</a></li>
+            <li><a href="{% url 'main:list' %}">Find a Home</a></li>
+            <li><a href="{% url "main:owner" %}">House Owners</a></li>
+            <li><a href="{% url 'main:contact' %}">Contact</a></li>
           </ul>
         </div><!--/.nav-collapse -->
       </div>
@@ -90,6 +90,7 @@
   <section id="aa-advance-search">
     <div class="container">
       <div class="aa-advance-search-area">
+          <form action="" method="GET">
         <div class="form">
          <div class="aa-advance-search-top">
             <div class="row">
@@ -112,11 +113,12 @@
               <div class="col-md-2">
                  <div class="aa-single-advance-search">
                   <select>
-                    <option value="0" selected>Type</option>
-                    <option value="1">Flat</option>
-                    <option value="2">Land</option>
-                    <option value="3">Plot</option>
-                    <option value="4">Commercial</option>
+                    <option value="0" selected>Bedrooms</option>
+                    <option value="1">1 Bedrooms</option>
+                    <option value="2">2 Bedrooms</option>
+                    <option value="3">3 Bedrooms</option>
+                    <option value="4">4 Bedrooms</option>
+                      <option value="4">5+ Bedrooms</option>
                   </select>
               </div>
               </div>
@@ -124,10 +126,8 @@
                  <div class="aa-single-advance-search">
                   <select>
                     <option value="0" selected>Type</option>
-                    <option value="1">Flat</option>
-                    <option value="2">Land</option>
-                    <option value="3">Plot</option>
-                    <option value="4">Commercial</option>
+                    <option value="1">Furnished</option>
+                    <option value="2">Unfurnished</option>
                   </select>
               </div>
               </div>
@@ -165,6 +165,7 @@
           </div>
          </div>
         </div>
+          </form>
       </div>
     </div>
   </section>
@@ -286,7 +287,6 @@
             <div class="aa-title">
               <h2>Why work with us?</h2>
               <span></span>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum sit ea nobis quae vero voluptatibus.</p>
             </div>
             <!-- service content -->
             <div class="aa-service-content">
@@ -352,7 +352,7 @@
         <div class="col-md-12">
           <div class="aa-promo-banner-area">
             <h3>Find Your Best Property</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus, ex illum corporis quibusdam numquam quisquam optio explicabo. Officiis odit quia odio dignissimos eius repellat id!</p>
+            <p>With Property allover Ghana, Search our listings for entire or shared Property with flexible durations and payments plans.</p>
             <a href="{% url "main:list" %}" class="aa-view-btn">View ALL</a>
           </div>
         </div>

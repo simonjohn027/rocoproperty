@@ -71,18 +71,18 @@
                 <div id="navbar" class="navbar-collapse collapse">
                     <ul id="top-menu" class="nav navbar-nav navbar-right aa-main-nav">
                         <li><a href="{% url "main:index" %}"><i data-feather="home"></i></a></li>
-                        <li class="active"><a href="{% url "main:list" %}">Browse Homes</a></li>
-                        <li><a href="{% url "main:list" %}">Land Owners</a></li>
-                        <li><a href="{% url 'main:contact' %}">CONTACT</a></li>
+                        <li class="active"><a href="{% url "main:list" %}">Find a Home</a></li>
+                        <li><a href="{% url "main:list" %}">House Owners</a></li>
+                        <li><a href="{% url 'main:contact' %}">Contact</a></li>
                          {% if not user.is_authenticated %}
                    <li><a href="{% url 'accs:registration' %}" class="aa-register">Register</a></li>
                    <li> <a href="{% url 'accs:login'%}" class="aa-login">Login</a></li>
                     {% else %} {% if user.is_staff %}
                    <li> <a href="{% url 'admin:index' %}" class="aa-register">Dashboard</a></li>
-                   <li><a href="{% url 'accs:logout'%}" class="aa-login">LogOut</a></li>
+                   <li><a href="{% url 'accs:logout'%}" class="aa-login">Logout</a></li>
                         {% else %}
                    <li><a href="{% url 'customer:dashboard' %}" class="aa-register">Dashboard</a></li>
-                   <li><a href="{% url 'accs:logout'%}" class="aa-login">LogOut</a></li>
+                   <li><a href="{% url 'accs:logout'%}" class="aa-login">Logout</a></li>
                    {% endif %} {% endif %}
                     </ul>
                 </div><!--/.nav-collapse -->

@@ -22,7 +22,7 @@
             display: inline;
             float: left;
             position: relative;
-            min-height: 250px;
+            min-height: 200px;
             width: 100%;
         }
 
@@ -60,13 +60,21 @@
                             src="{% static "main/img/logo.png" %}" alt="logo"></a>
                 </div>
                 <div id="navbar" class="navbar-collapse collapse">
-                    <ul id="top-menu" class="nav navbar-nav navbar-right aa-main-nav">
+                     <ul id="top-menu" class="nav navbar-nav navbar-right aa-main-nav">
                         <li><a href="{% url "main:index" %}"><i data-feather="home"></i></a></li>
-                        <li class="active"><a href="{% url "main:list" %}">Browse Homes</a></li>
-                        <li><a href="{% url "main:owner" %}">Land Owners</a></li>
-                        <li><a href="{% url 'main:contact' %}">CONTACT</a></li>
-                        <li><a href="contact.html">Login</a></li>
-                        <li><a href="404.html">Register</a></li>
+                        <li ><a href="{% url "main:list" %}">Find a Home</a></li>
+                        <li class="active"><a href="{% url "main:list" %}">House Owners</a></li>
+                        <li><a href="{% url 'main:contact' %}">Contact</a></li>
+                         {% if not user.is_authenticated %}
+                   <li><a href="{% url 'accs:registration' %}" class="aa-register">Register</a></li>
+                   <li> <a href="{% url 'accs:login'%}" class="aa-login">Login</a></li>
+                    {% else %} {% if user.is_staff %}
+                   <li> <a href="{% url 'admin:index' %}" class="aa-register">Dashboard</a></li>
+                   <li><a href="{% url 'accs:logout'%}" class="aa-login">Logout</a></li>
+                        {% else %}
+                   <li><a href="{% url 'customer:dashboard' %}" class="aa-register">Dashboard</a></li>
+                   <li><a href="{% url 'accs:logout'%}" class="aa-login">Logout</a></li>
+                   {% endif %} {% endif %}
                     </ul>
                 </div><!--/.nav-collapse -->
             </div>
@@ -111,8 +119,9 @@
                         </div>
                         <div class="icon-info">
                             <h4>Get In touch</h4>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
-                                incididunt ut labore et dolore magna aliqua.</p>
+                            <p>Fill out a form or request a call and provide your property details
+                            <a href="{% url 'accs:registration' %}">Get Started</a>
+                            </p>
 
                         </div>
                     </div>
@@ -122,8 +131,7 @@
                         </div>
                         <div class="icon-info">
                             <h4>Sign Agreement</h4>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
-                                incididunt ut labore et dolore magna aliqua.</p>
+                            <p>We’ll send you a service agreement with mutually agreed terms</p>
                         </div>
                     </div>
                 </div>
@@ -134,8 +142,7 @@
                         </div>
                         <div class="icon-info">
                             <h4>Schedule a site visit</h4>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
-                                incididunt ut labore et dolore magna aliqua.</p>
+                            <p>We’ll contact you to arrange an inspection of your property and finalise our agreement</p>
                         </div>
                     </div>
                     <div class="service-info">
@@ -144,8 +151,7 @@
                         </div>
                         <div class="icon-info">
                             <h4>Earn rental income</h4>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
-                                incididunt ut labore et dolore magna aliqua.</p>
+                            <p>We’ll list your unit and help you find tenants, once we do, you’ll start earning rental incom</p>
                         </div>
                     </div>
                 </div>

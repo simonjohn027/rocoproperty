@@ -34,7 +34,7 @@
                 <div class="aa-header-left">
                   <div class="aa-telephone-no">
                     <span class="fa fa-phone"></span>
-                    1-900-523-3564
+                     233 (0) 20 477 8022
                   </div>
                   <div class="aa-email hidden-xs">
                     <span class="fa fa-envelope-o"></span> hello@property233.co
@@ -48,10 +48,10 @@
                   <a href="{% url 'accs:login'%}" class="aa-login">Login</a>
                     {% else %} {% if user.is_staff %}
                      <a href="{% url 'admin:index' %}" class="aa-register">Dashboard</a>
-                  <a href="{% url 'accs:logout'%}" class="aa-login">LogOut</a>
+                  <a href="{% url 'accs:logout'%}" class="aa-login">Logout</a>
                         {% else %}
                          <a href="{% url 'customer:dashboard' %}" class="aa-register">Dashboard</a>
-                  <a href="{% url 'accs:logout'%}" class="aa-login">LogOut</a>
+                  <a href="{% url 'accs:logout'%}" class="aa-login">Logout</a>
                    {% endif %} {% endif %}
                 </div>
               </div>
@@ -83,14 +83,16 @@
         <div id="navbar" class="navbar-collapse collapse">
           <ul id="top-menu" class="nav navbar-nav navbar-right aa-main-nav">
             <li><a href="{% url "main:index" %}"><i data-feather="home"></i></a></li>
-            <li ><a href="{% url 'main:index' %}">Browse Homes</a></li>
-            <li><a href="{% url "main:owner" %}">Land Owners</a></li>
-            <li class="active"><a href="{% url 'main:contact' %}">CONTACT</a></li>
+            <li ><a href="{% url 'main:index' %}">Find a Home</a></li>
+            <li><a href="{% url "main:owner" %}">House Owners</a></li>
+            <li class="active"><a href="{% url 'main:contact' %}">Contact</a></li>
           </ul>
         </div><!--/.nav-collapse -->
       </div>
     </nav>
   </section>
+
+
 
   <!-- Start Proerty header  -->
 
@@ -99,11 +101,32 @@
       <div class="row">
         <div class="col-md-12">
           <div class="aa-property-header-inner">
+              {% if messages %}
+    <div aria-live="polite" aria-atomic="true" style="position: relative;">
+  <!-- Position it -->
+  <div style="position: absolute; top: 0; right: 0;">
+    {% for message in messages %}
+     <!-- Then put toasts within -->
+    <div class="toast" data-autohide="true" data-delay = 500 role="alert" aria-live="assertive" aria-atomic="true">
+      <div class="toast-header">
+        <strong class="mr-auto">Propert233</strong>
+        <button type="button" class="ml-2 mb-1 close" data-dismiss="toast" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="toast-body">
+          {{ message }}
+      </div>
+    </div>
+
+    {% endfor %}
+
+
+  </div>
+</div>
+    {% endif %}
             <h2>Contact</h2>
-            <ol class="breadcrumb">
-            <li><a href="#">HOME</a></li>            
-            <li class="active">Contact</li>
-          </ol>
+
           </div>
         </div>
       </div>
@@ -119,15 +142,15 @@
             <div class="aa-contact-top">
               <div class="aa-contact-top-left">
                 <iframe width="100%" height="450" frameborder="0" allowfullscreen=""
-                        style="border:0" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6851.201919469417!2d-86.11773906635584!3d33.47324776828677!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x888bdb60cc49c571%3A0x40451ca6baf275c7!2s36008+AL-77%2C+Talladega%2C+AL+35160%2C+USA!5e0!3m2!1sbn!2sbd!4v1460452919256"></iframe>
+                        style="border:0" src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJv3ccV1qd3w8RAyXZfnbMgyA&key=AIzaSyCBi9x35Ba1MhGoo9sfiiPoKPV9WuWbW28"></iframe>
               </div>
               <div class="aa-contact-top-right">
                 <h2>Contact</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae placeat aspernatur aperiam, quisquam voluptas enim tempore ab itaque nam modi eos corrupti distinctio nobis labore dolorum quae tenetur. Sapiente, sequi.</p>
+                <p>With thousands of vetted working professionals in our network; we’re able to get your home occupied three times faster than traditional agents</p>
                 <ul class="contact-info-list">
-                  <li> <i data-feather="phone"></i> 1-700-564-6321</li>
+                  <li> <i data-feather="phone"></i> 233 (0) 20 477 8022</li>
                   <li> <i data-feather="mail"></i> info@homeproperty.com</li>
-                  <li> <i data-feather="map-pin"></i> 36008 AL-77, Talladega, AL 35160, USA</li>
+                  <li> <i data-feather="map-pin"></i>Accra, Ghana, Adenta.</li>
                 </ul>
               </div>
             </div>
@@ -175,4 +198,11 @@
 
 
 
+{% endblock %}
+{% block costume_js %}
+<script>
+$(document).ready(function(){
+  $('.toast').toast('show');
+});
+</script>
 {% endblock %}
