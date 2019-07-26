@@ -5,10 +5,11 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+
     <title>Rocks | Home</title>
     {% load staticfiles %}
     <!-- Favicon -->
-    <link rel="shortcut icon" href="{% static 'main/img/favicon.ico' %}" type="image/x-icon">
+    <link rel="shortcut icon" href="{% static 'main/img/favicon/favicon.ico' %}" type="image/x-icon">
 
     <!-- Font awesome -->
     <link href="{% static  "main/css/font-awesome.css" %}" rel="stylesheet">
@@ -16,7 +17,7 @@
 
 
     <!-- Bootstrap -->
-    <link href="{% static 'main/css/bootstrap.css' %}" rel="stylesheet" >
+    <link href="{% static 'main/css/bootstrap.css' %}" rel="stylesheet">
     <!-- slick slider -->
     <link rel="stylesheet" type="text/css" href="{% static "main/css/slick.css" %}">
     <!-- price picker slider -->
@@ -26,7 +27,8 @@
     <!-- Theme color -->
     <link id="switcher" href="{% static "main/css/theme-color/default-theme.css" %}" rel="stylesheet">
     <!--Perfect Scroll bar-->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/jquery.perfect-scrollbar/1.4.0/css/perfect-scrollbar.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/jquery.perfect-scrollbar/1.4.0/css/perfect-scrollbar.min.css"
+          rel="stylesheet">
     <!--Swiper Slider -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/css/swiper.min.css">
     <!-- Main style sheet -->
@@ -96,9 +98,9 @@
     </div>
 </footer>
 <!-- Feathers Icons-->
-    <script src="https://unpkg.com/feather-icons"></script>
+<script src="https://unpkg.com/feather-icons"></script>
 <script>
-  feather.replace()
+    feather.replace()
 </script>
 <!-- / Footer -->
 
@@ -122,7 +124,7 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.perfect-scrollbar/1.4.0/perfect-scrollbar.min.js"></script>
 <!-- Custom js -->
 <script src="{% static "main/js/custom.js" %}"></script>
-{% block costume_js%}
+{% block costume_js %}
 {% endblock %}
 
 </body>

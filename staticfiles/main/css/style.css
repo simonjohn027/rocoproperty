@@ -572,14 +572,14 @@ img {
 }
 #aa-advance-search .aa-advance-search-area {
   background-color: rgba(221, 221, 221, 0.8);
-  border-radius: 10px 10px 0 0;
+  border-radius: 10px 10px;
   display: inline;
   float: left;
-  margin-top: -100px;
-  min-height: 200px;
-  padding: 25px 20px;
+  margin-top: -200px;
+  padding: 8px 10px;
   position: relative;
-  width: 100%;
+  width: 80%;
+  left:10%;
 }
 #aa-advance-search .aa-advance-search-area .aa-advance-search-top {
   display: inline;
@@ -1338,7 +1338,7 @@ img {
 ====================*/
 
 #aa-property-header {
-   background-image: url("../img/banner.jpg");*
+   background-image: url("../img/banner.png");*
   background-attachment: fixed;
   background-position: center center;
   background-size: cover;

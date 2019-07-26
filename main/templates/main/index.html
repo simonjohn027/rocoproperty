@@ -19,7 +19,7 @@
                   </div>
                 </div>
               </div>
-              <div class="col-md-6 col-sm-6 col-xs-6">
+              <!--<div class="col-md-6 col-sm-6 col-xs-6">
                 <div class="aa-header-right">
                     {% if not user.is_authenticated %}
                   <a href="{% url 'accs:registration' %}" class="aa-register">Register</a>
@@ -32,7 +32,7 @@
                   <a href="{% url 'accs:logout'%}" class="aa-login">LogOut</a>
                    {% endif %} {% endif %}
                 </div>
-              </div>
+              </div>-->
             </div>
           </div>
         </div>
@@ -94,42 +94,10 @@
         <div class="form">
          <div class="aa-advance-search-top">
             <div class="row">
-              <div class="col-md-4">
+              <div class="col-md-10">
                 <div class="aa-single-advance-search">
                   <input type="text" placeholder="Type Your Location">
                 </div>
-              </div>
-              <div class="col-md-2">
-                <div class="aa-single-advance-search">
-                  <select>
-                   <option value="0" selected>Category</option>
-                    <option value="1">Flat</option>
-                    <option value="2">Land</option>
-                    <option value="3">Plot</option>
-                    <option value="4">Commercial</option>
-                  </select>
-                </div>
-              </div>
-              <div class="col-md-2">
-                 <div class="aa-single-advance-search">
-                  <select>
-                    <option value="0" selected>Bedrooms</option>
-                    <option value="1">1 Bedrooms</option>
-                    <option value="2">2 Bedrooms</option>
-                    <option value="3">3 Bedrooms</option>
-                    <option value="4">4 Bedrooms</option>
-                      <option value="4">5+ Bedrooms</option>
-                  </select>
-              </div>
-              </div>
-              <div class="col-md-2">
-                 <div class="aa-single-advance-search">
-                  <select>
-                    <option value="0" selected>Type</option>
-                    <option value="1">Furnished</option>
-                    <option value="2">Unfurnished</option>
-                  </select>
-              </div>
               </div>
               <div class="col-md-2">
                 <div class="aa-single-advance-search">
@@ -138,32 +106,6 @@
               </div>
             </div>
           </div>
-         <div class="aa-advance-search-bottom">
-           <div class="row">
-            <div class="col-md-6">
-              <div class="aa-single-filter-search">
-                <span>AREA (SQ)</span>
-                <span>FROM</span>
-                <span id="skip-value-lower" class="example-val">30.00</span>
-                <span>TO</span>
-                <span id="skip-value-upper" class="example-val">100.00</span>
-                <div id="aa-sqrfeet-range" class="noUi-target noUi-ltr noUi-horizontal noUi-background">
-                </div>
-              </div>
-            </div>
-            <div class="col-md-6">
-              <div class="aa-single-filter-search">
-                <span>PRICE ($)</span>
-                <span>FROM</span>
-                <span id="skip-value-lower2" class="example-val">30.00</span>
-                <span>TO</span>
-                <span id="skip-value-upper2" class="example-val">100.00</span>
-                <div id="aa-price-range" class="noUi-target noUi-ltr noUi-horizontal noUi-background">
-                </div>
-              </div>
-            </div>
-          </div>
-         </div>
         </div>
           </form>
       </div>

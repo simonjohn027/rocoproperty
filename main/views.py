@@ -21,16 +21,6 @@ def property(request):
 def owners(request):
     return  render(request, 'main/landowner.html')
 
-class SearchResultsView(ListView):
-    model = Property
-    template_name = 'main/placeholder.html'
-
-    def get_queryset(self): # new
-        query = self.request.GET.get('q')
-        object_list = Property.objects.filter(
-            Q(location__icontains=query) | Q(state__icontains=query)
-        )
-        return object_list
 
 def contact(request):
     return  render(request, 'main/contact.html')
