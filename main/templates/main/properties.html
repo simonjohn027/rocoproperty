@@ -50,14 +50,14 @@
             <li><a href="{% url "main:owner" %}">House Owners</a></li>
             <li><a href="{% url 'main:contact' %}">Contact</a></li>
                {% if not user.is_authenticated %}
-                   <li><a href="{% url 'accs:registration' %}" class="aa-register">Register</a></li>
+               <!--    <li><a href="{% url 'accs:registration' %}" class="aa-register">Register</a></li>
                    <li> <a href="{% url 'accs:login'%}" class="aa-login">Login</a></li>
                     {% else %} {% if user.is_staff %}
                    <li> <a href="{% url 'admin:index' %}" class="aa-register">Dashboard</a></li>
                    <li><a href="{% url 'accs:logout'%}" class="aa-login">Logout</a></li>
                         {% else %}
                    <li><a href="{% url 'customer:dashboard' %}" class="aa-register">Dashboard</a></li>
-                   <li><a href="{% url 'accs:logout'%}" class="aa-login">Logout</a></li>
+                   <li><a href="{% url 'accs:logout'%}" class="aa-login">Logout</a></li>-->
                    {% endif %} {% endif %}
           </ul>
         </div><!--/.nav-collapse -->
